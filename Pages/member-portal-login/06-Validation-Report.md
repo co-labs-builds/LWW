@@ -18,15 +18,18 @@ post-login redirect).
 | Connection | Required | Result |
 |---|---|---|
 | Destination repository (`co-labs-builds/LWW`) | Yes | `READY` — read verified via API; owner-authenticated; branch on origin; push available |
-| Ontraport | Yes | `BLOCKED` (read) — connector not enabled in chat → documented `TBD` fallback in effect |
+| Ontraport | Yes | `READY` — connector enabled; dynamic pass completed against live data (site "Landmark Portal", id 1) |
 | Source design/code | Yes | `READY` — complete HTML/CSS in one uploaded file |
 | Live-page retrieval | No | `NOT REQUIRED` |
 | External URL validation | Optional | `LIMITED` — Typekit kit preserved, validate in browser |
 | Supporting systems | No | `NOT REQUIRED` |
 
-Overall preflight outcome: **READY WITH LIMITATIONS**. `CONNECTION-READINESS.md`
-records the full detail. The package is **not** labeled a verified dynamic
-build — all dynamic mappings are `TBD`.
+Overall preflight outcome: **READY**. `CONNECTION-READINESS.md` records the full
+detail. Dynamic mappings were **verified against live Ontraport** (2026-07-27):
+login/reset/redirect are native membership features of the Landmark Portal site;
+no merge tags are needed. The only residual is UI configuration (login URL path,
+tracking) plus one page that does not exist yet (member-home for the post-login
+redirect, LNK-005).
 
 ## Inputs Received
 
@@ -55,8 +58,9 @@ build — all dynamic mappings are `TBD`.
    Benign — it's a form hook selector; the `<form>` element is styled via child
    rules (`.lm-login__field input`, `.lm-login__btn`). It will carry the
    Ontraport login action (LNK-001).
-3. **Ontraport dynamic wiring is `TBD`** (LNK-001/002/005, LOGIC-001) — not a
-   defect, a documented deferral pending Ontraport access.
+3. **Ontraport dynamic wiring resolved** — login/reset/redirect verified as
+   native Landmark Portal membership features. Only LNK-005 (post-login redirect)
+   remains open because the member-home page does not exist yet.
 4. **Body font source ambiguity** — page uses Typekit; repo elsewhere self-hosts
    `objektiv-mk1`. Flagged for a project decision (00-Assets-Needed.md).
 
@@ -98,17 +102,18 @@ build — all dynamic mappings are `TBD`.
 
 | ID | Item | Status |
 |---|---|---|
-| LNK-001 | Login form action | TBD (must replace placeholder) |
-| LNK-002 | Password help URL | Needs URL |
+| LNK-001 | Login form action | Resolved — native login block (Landmark Portal site 1) |
+| LNK-002 | Password help | Resolved — native password-reset link |
 | LNK-003 | Footer email | Confirm / optionally `mailto:` |
 | LNK-004 | Footer phone | Confirm / optionally `tel:` |
-| LNK-005 | Post-login redirect | TBD (Ontraport setting) |
-| DYN-* | Merge tags | None in source (`N/A`) |
-| LOGIC-001 | Login error state | TBD (Ontraport) |
+| LNK-005 | Post-login redirect | TBD — member-home page not built yet (not a data gap) |
+| DYN-* | Merge tags | None in source (`N/A`) — confirmed via Ontraport |
+| LOGIC-001 | Login error state | Native Ontraport login error |
 
 - Every link/action in source is represented in `02-Link-Dynamic-Content-Map.md`. ✓
 - Code comments use matching `LNK-###` IDs where replacement is needed. ✓
-- No merge tags, field names, or URLs were invented. ✓
+- No merge tags, field names, or URLs were invented; dynamic pass verified against live Ontraport. ✓
+- Verified context: account 270197, site "Landmark Portal" (id 1), `landmark-portal.com`, 108 members. ✓
 
 ## Interaction Dependencies
 
@@ -124,11 +129,13 @@ build — all dynamic mappings are `TBD`.
 
 ## Manual Review Still Required (in Ontraport)
 
-- Resolve all `TBD` dynamic wiring with Ontraport access.
+- Build the page on the **Landmark Portal** site and swap in the **native login
+  block** (LNK-001) + native reset link (LNK-002).
+- Build/designate the member-home page, then set the post-login redirect (LNK-005).
 - Replace 3 asset markers with hosted Ontraport URLs.
-- Confirm membership site, URL path, indexing, tracking.
+- Set login URL path, indexing (Noindex), and tracking in the site UI.
 - Decide Typekit vs self-hosted `objektiv-mk1`.
-- Re-test focus/keyboard and error state on the live page.
+- Re-test focus/keyboard and the native error state on the live page.
 
 ## Ready for Ontraport: Yes
 

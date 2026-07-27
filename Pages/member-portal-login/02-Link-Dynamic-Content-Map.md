@@ -3,10 +3,14 @@
 **Page Slug:** `member-portal-login`
 **Destination:** `LWW/Pages/member-portal-login/`
 
-> **Ontraport read access was NOT available at build time** (connector not
-> enabled in this chat). No merge tags, field IDs, form actions, or URLs are
-> invented. Every dynamic value below is preserved from source and marked
-> `TBD` / `Needs …`. Resolve each in Ontraport before publishing to members.
+> **Ontraport read access completed (2026-07-27).** Verified against live data:
+> membership site **"Landmark Portal"** (site_id **1**, domain
+> **`landmark-portal.com`**, 108 members). Login, password-reset, and post-login
+> redirect are **native Ontraport membership-site features** configured in the
+> site's settings UI — they are not merge tags or custom page URLs, and Ontraport
+> does not expose them as API data fields. Nothing was invented. Items below are
+> updated with verified specifics; the few remaining `TBD`s are UI-configuration
+> steps (and one page that does not exist yet), not unknown data.
 
 ## Status Legend
 
@@ -26,13 +30,13 @@
 **Visible Label or Purpose:** Authenticate a member and start their session
 **Element Selector:** `.lm-login__form` (`<form>` in `panel.html`)
 **Source href / action / handler:** `onsubmit="return false;"` (static placeholder — no real action)
-**Required Final Destination:** Ontraport membership login / member-area authentication
-**Link Type:** JavaScript Action / Native Ontraport form
-**Ontraport Field or Dynamic URL Source:** Ontraport membership site login (SmartForm or member login block) — **TBD**
+**Required Final Destination:** Native login for membership site **Landmark Portal** (site_id 1, `landmark-portal.com`)
+**Link Type:** Native Ontraport membership login
+**Ontraport Field or Dynamic URL Source:** Ontraport membership-site **native login block** for site "Landmark Portal" — verified this is native functionality, not a merge tag or custom endpoint
 **Display Condition:** Always visible
-**Fallback Behavior:** On failed auth, show Ontraport's login error state
-**Status:** TBD (Needs Logic)
-**Notes:** Recommended approach — replace this static `<form>` with Ontraport's native membership login form so session/auth is handled by Ontraport, OR wire the inputs (`#email`, `#password`) to the membership login endpoint. Do not ship `onsubmit="return false;"`.
+**Fallback Behavior:** On failed auth, Ontraport shows the site's login error state
+**Status:** Resolved (mechanism) — implement with Ontraport's native login element
+**Notes:** Replace the static `<form>` (`onsubmit="return false;"`) with Ontraport's membership login element/block for the Landmark Portal site. Keep this page's styling by mapping the login block's email/password inputs and submit button to the `.lm-login__field`/`.lm-login__btn` classes (or restyle the native block to match). Ontraport handles session/auth. Do not ship the placeholder.
 
 ### LNK-002 — "Password help" link
 
@@ -40,13 +44,13 @@
 **Visible Label or Purpose:** First-time setup / forgot-password recovery
 **Element Selector:** `.lm-login__help a`
 **Source href / action / handler:** `href="#"` (placeholder)
-**Required Final Destination:** Ontraport password-reset / account-setup URL
-**Link Type:** Static (likely) or Dynamic
-**Ontraport Field or Dynamic URL Source:** Ontraport password-reset page URL — **TBD**
+**Required Final Destination:** Ontraport's native "forgot password" flow for the Landmark Portal site
+**Link Type:** Native Ontraport membership function
+**Ontraport Field or Dynamic URL Source:** Membership-site native password-reset link (not a custom URL/merge tag) — verified via sites read
 **Display Condition:** Always visible
 **Fallback Behavior:** None
-**Status:** Needs URL
-**Notes:** Confirm whether first-time members and returning members use the same recovery URL.
+**Status:** Resolved (mechanism) — use the site's native reset link
+**Notes:** Ontraport membership sites provide a built-in password-reset link. Point the "Password help" anchor at that native reset action for site "Landmark Portal." Confirm in the site settings UI whether first-time setup uses the same flow (108 members already exist, so returning-member reset is the primary case).
 
 ### LNK-003 — Support email
 
@@ -82,13 +86,13 @@
 **Visible Label or Purpose:** Where an authenticated member lands
 **Element Selector:** N/A (Ontraport auth redirect)
 **Source href / action / handler:** Not present in source
-**Required Final Destination:** Member portal home / dashboard URL
-**Link Type:** Dynamic (Ontraport membership redirect)
-**Ontraport Field or Dynamic URL Source:** Ontraport membership settings — **TBD**
+**Required Final Destination:** Landmark Portal member-home page on `landmark-portal.com`
+**Link Type:** Native Ontraport membership redirect
+**Ontraport Field or Dynamic URL Source:** Landmark Portal site membership settings (post-login destination)
 **Display Condition:** After successful auth
 **Fallback Behavior:** Return to login on failure
-**Status:** TBD
-**Notes:** Configured in Ontraport membership/login settings, not in page markup.
+**Status:** TBD — **blocked by missing page**, not missing data
+**Notes:** Set in the site's membership settings. ⚠️ As of this read, the Landmark Portal site (site_id 1) has only 3 starter/test "My Account" pages and **no member-home/dashboard page exists yet**. Build/designate that page first, then point the post-login redirect at it. Portal pages live on `landmark-portal.com`; follow the account naming convention `PORTAL : … (lp)`.
 
 ---
 
@@ -139,8 +143,21 @@ requirement (not in source) and is intentionally **not** invented here.
 
 | ID | Location | Type | Status |
 |---|---|---|---|
-| LNK-001 | Login form | Action | TBD |
-| LNK-002 | Password help | URL | Needs URL |
-| LNK-003 | Footer email | Email | Confirm |
-| LNK-004 | Footer phone | Phone | Confirm |
-| LNK-005 | Post-login redirect | Dynamic | TBD |
+| LNK-001 | Login form | Native OP login | Resolved — use native login block (Landmark Portal site) |
+| LNK-002 | Password help | Native OP reset | Resolved — use native reset link |
+| LNK-003 | Footer email | Email | Confirm / optional `mailto:` |
+| LNK-004 | Footer phone | Phone | Confirm / optional `tel:` |
+| LNK-005 | Post-login redirect | Native OP redirect | TBD — member-home page not built yet |
+
+## Verified Ontraport Context (2026-07-27 read)
+
+| Item | Verified value |
+|---|---|
+| Account | 270197 (America/Los_Angeles, LM Stripe) |
+| Membership site | **Landmark Portal** — site_id `1` |
+| Portal domain | `landmark-portal.com` |
+| Members | 108 (all active), 43 total logins |
+| Existing site pages | 3 starter/test "My Account" cancellation pages only |
+| Login/reset/redirect | Native Ontraport membership features (site settings UI) |
+| Merge tags on this page | None (pre-auth) |
+| Suggested page name | `PORTAL : Login : Member Portal Login (lp)` |

@@ -22,12 +22,14 @@ HTML element**. Read the layout note in `01-Page-Structure-Map.md` first.
 
 ## 1. Create and Configure the Ontraport Page
 
-Create the page using `README.md` settings. Key items to resolve (`TBD`):
+Create the page on the **Landmark Portal** membership site (site_id 1,
+`landmark-portal.com`) using `README.md` settings. Verified vs. still-to-set:
 
-- Membership site / access rule this page logs into
-- Domain and URL path (e.g. `/portal/login`)
-- Search indexing (recommend **Noindex**)
-- Tracking (GA4 / GTM / OP)
+- Membership site: **Landmark Portal** ✅ (verified)
+- Domain: `landmark-portal.com` ✅ (verified); URL path e.g. `/login` — set in UI
+- Suggested page name: `PORTAL : Login : Member Portal Login (lp)` (account convention)
+- Search indexing (recommend **Noindex**) — set in UI
+- Tracking (GA4 / GTM / OP) — set in UI
 
 Add the Typekit font link to the page `<head>` / custom head area:
 
@@ -95,19 +97,22 @@ All three assets are embedded base64 and represented by
 
 ## 6. Implement Links & Dynamic Wiring
 
-Work through `02-Link-Dynamic-Content-Map.md`. All items are currently `TBD` /
-`Needs …` because Ontraport was not connected:
+Work through `02-Link-Dynamic-Content-Map.md`. The Ontraport dynamic pass is
+done — this page belongs to the **Landmark Portal** membership site (site_id 1,
+`landmark-portal.com`). Login/reset/redirect are **native membership features**:
 
 - **LNK-001** — Replace the static login `<form>` (`onsubmit="return false;"`)
-  with the Ontraport **membership login** form/handler. **Do not ship the
-  placeholder.**
-- **LNK-002** — Set the "Password help" `href` to the Ontraport password-reset /
-  setup URL.
+  with Ontraport's **native membership login block** for the Landmark Portal
+  site, then restyle it (or map its inputs) to the `.lm-login__field` /
+  `.lm-login__btn` classes. **Do not ship the placeholder.**
+- **LNK-002** — Point "Password help" at the site's **native password-reset**
+  link (not a custom URL).
 - **LNK-003 / LNK-004** — Confirm the support email/phone and decide whether to
   make them clickable `mailto:` / `tel:` links.
-- **LNK-005** — Configure the post-login redirect in Ontraport membership
-  settings.
-- **LOGIC-001** — Confirm/style the invalid-credentials error state.
+- **LNK-005** — Set the post-login redirect in the Landmark Portal site
+  settings. ⚠️ The member-home page does not exist yet — build/designate it
+  first, then point the redirect at it.
+- **LOGIC-001** — Confirm/style the native invalid-credentials error state.
 
 There are **no merge tags** on this pre-auth page (Section B is `N/A`).
 

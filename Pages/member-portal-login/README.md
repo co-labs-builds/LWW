@@ -4,7 +4,7 @@
 
 **Page Slug:** `member-portal-login`
 **Page Type:** Membership login / gateway page
-**Build Status:** Packaged for Ontraport build — dynamic wiring `TBD` (Ontraport read access unavailable at packaging time)
+**Build Status:** Packaged for Ontraport build — dynamic pass completed against live Ontraport (2026-07-27); login/reset/redirect resolved to native membership features
 **Primary Purpose:** Let existing Landmark members sign in to reach their Member Portal
 **Primary Audience:** Existing Landmark Worldwide members/participants with an account
 **Visibility / Access:** Public URL (the login screen itself is unauthenticated); it gates access to the authenticated member area
@@ -26,15 +26,15 @@ goal: give first-time or locked-out members a path to password help.
 
 | Setting | Required Value | Status / Notes |
 |---|---|---|
-| Ontraport Page Name | `Member Portal — Login` | Suggested; confirm |
-| Ontraport Page Type | Membership login page | Wire form to native Ontraport membership login (LNK-001) |
-| Domain | `TBD` | Not supplied |
-| URL Path | `TBD` (e.g. `/portal/login`) | Not supplied |
-| Full URL | `TBD` | Not supplied |
+| Ontraport Page Name | `PORTAL : Login : Member Portal Login (lp)` | Matches account naming convention `CATEGORY : Section : Name (type) (STATUS)` |
+| Ontraport Page Type | Membership site page (login) on **Landmark Portal** site | Wire form to native Ontraport membership login (LNK-001) |
+| Domain | `landmark-portal.com` | ✅ Verified — Landmark Portal site domain |
+| URL Path | e.g. `/login` | Set in site settings; portal root currently unused |
+| Full URL | e.g. `landmark-portal.com/login` | Confirm path in site UI |
 | Dynamic Template Object | `N/A` | Static pre-auth page; no per-record templating |
 | Record Identifier / URL Parameter | `N/A` | — |
-| Membership Site / Access Rule | `TBD` | Which membership site does this log into? |
-| Login Required | No (this IS the login) | Gates the member area behind it |
+| Membership Site / Access Rule | **Landmark Portal** (site_id `1`, 108 members) | ✅ Verified |
+| Login Required | No (this IS the login) | Gates the Landmark Portal member area |
 | Search Indexing | Recommend Noindex | Confirm |
 | Page Tracking | `TBD` | GA4 / GTM / OP tracking per project standard |
 | Page-Level CSS | `04-Master-Page.css` | Paste into page Custom Code |
@@ -51,8 +51,8 @@ membership credentials can pass through it.
 
 ### Required record, status, or access conditions
 
-Valid member credentials in the target Ontraport membership site. Exact
-membership site / access group is `TBD` (needs Ontraport).
+Valid member credentials in the **Landmark Portal** membership site (site_id 1,
+`landmark-portal.com`). 108 members currently exist on this site.
 
 ### What should happen when access requirements are not met
 
@@ -75,8 +75,8 @@ _All inbound sources are inferred/`TBD`; none are explicit in the source file._
 
 | Destination Page / Action | User Action | Condition | Link / Map ID | Notes |
 |---|---|---|---|---|
-| Member Portal home/dashboard | Successful login | Valid credentials | LNK-005 | Destination `TBD` (Ontraport membership setting) |
-| Password reset / setup | Click "Password help" | Forgot/first-time | LNK-002 | URL `TBD` |
+| Landmark Portal member home | Successful login | Valid credentials | LNK-005 | ⚠️ Member-home page not built yet on site 1 — create it, then set as post-login redirect |
+| Native password reset | Click "Password help" | Forgot/first-time | LNK-002 | Native Ontraport reset for Landmark Portal site |
 
 ## Page Structure
 
@@ -113,10 +113,13 @@ merge tags, conditional display logic, and interaction wiring is:
 
 ### Critical dynamic requirements
 
-1. **LNK-001** — Wire the login form to Ontraport membership login (currently a
-   static `onsubmit="return false;"` placeholder). **Must not ship as-is.**
-2. **LNK-002** — Password-help URL.
-3. **LNK-005** — Post-login redirect destination.
+1. **LNK-001** — Replace the static `onsubmit="return false;"` form with
+   Ontraport's **native membership login block** for the Landmark Portal site.
+   **Must not ship as-is.**
+2. **LNK-002** — Point "Password help" at the site's **native password-reset**
+   link.
+3. **LNK-005** — Post-login redirect → Landmark Portal member home. ⚠️ That page
+   does not exist yet; build it first.
 
 ## Functional Behavior
 
@@ -150,10 +153,15 @@ replace the `REPLACE_WITH_ONTRAPORT_URL/...` markers in the code.
 
 ## Known Risks, Open Questions & TBD Items
 
-- **Ontraport not connected at build time** → login action (LNK-001), password
-  help URL (LNK-002), post-login redirect (LNK-005), membership site, domain,
-  URL path, and tracking are all `TBD`. Resolve in Ontraport.
-- **Static login form** must be replaced with a real Ontraport membership login.
+- **Ontraport dynamic pass complete (2026-07-27).** Membership site (Landmark
+  Portal, site_id 1), domain (`landmark-portal.com`), and login/reset/redirect
+  mechanism (native membership features) are **verified**. Remaining items are
+  UI-configuration, not unknown data:
+  - **LNK-005 blocked by a missing page** — the Landmark Portal member-home /
+    dashboard does not exist yet; build it, then set as the post-login redirect.
+  - Exact login URL path and tracking are set in the Ontraport UI.
+- **Static login form** must be replaced with the native Ontraport membership
+  login block for the Landmark Portal site.
 - **Body font source:** page uses Typekit; repo elsewhere self-hosts
   `objektiv-mk1`. Pick one (00-Assets-Needed.md).
 - **Tiempos Headline license:** confirm self-hosting on Ontraport is permitted.
@@ -169,6 +177,7 @@ this README and the Link & Dynamic Content Map.
 | Date | Change | Author |
 |---|---|---|
 | 2026-07-27 | Initial page package created | Claude (landmark-site-build skill) |
+| 2026-07-27 | Ontraport dynamic pass — verified Landmark Portal site (id 1), domain, native login/reset/redirect; updated readiness, link map, README | Claude (landmark-site-build skill) |
 
 ## Implementation Documents
 
