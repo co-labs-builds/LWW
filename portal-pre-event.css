@@ -1,0 +1,1868 @@
+<style>
+
+  /* =========================================================
+   LANDMARK PORTAL — SELF-HOSTED FONTS
+   ========================================================= */
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/ba7ff633d6c04ce990ea8dcd412628be.phpog5fus?Expires=4938729439&Signature=QwdJNIufBp6Ban7cBFYbg5WnIUYhX3YmhJoGG2Wcp2RvojQM1Y196zA23ANoo~LXamoPi7pi2BVvRyf1JIKGV7LMgdY2icTw~TDwqhZh6SoscuGQla43z-9Bj4q7jzhyJk4gYTEGdhFJQO1VYLVLDPfIFScQA8lZemPBovwTBjxtdAVxroKXujW6YEatuk1FNLPkmNPR1R8DljQbsvccTz9F2k~OgFNI3B6S3ozK3dRAQOsYt7Z25MuYkvt54Li9CMeHBBVZStip8W3q56l4XtsWDqmI2ZtE~xyk9AH6LAQYBE8zqz~WgYjDC1whzMvQFkqBHQ6W3T5lM32CwuoZqg__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/ce5b7e54997044a8b8a5001b7929ff4f.phphgrpey?Expires=4938729384&Signature=Uw6VytthceXwol5adfB8zHZJEh9q6KEUGEm0MXcodLDwRWdRbtsd-6BE69XOYtQRk58794AwDDR2c5BJAqAXH5SVcntlyRWqlYMV~x2kHI1qTPARzWAKTAlPPQn7LUNUYhBr0ZFNAd~bXmEtDvUDJ0RaQwDiR0c49Ix0DZ1CH7mgoiKGigwnmEuISJR~eWQHs2aVUeqXYzeGY6EreetDIT98KSri01gCB0j8Ivo61DwVB5cB~O4qYwaJHr5my99Ss8Gaq40EhbDVDPdHcJrJDeey~QBUu2w~qEaUUfBWIr8EkxCMitSt9t5pRvfuxwuvXUYwFAGlj2yG4cqz7lOxEQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/7a3cb7f1f1a7454ab43f02da2e28d747.phpegn3xv?Expires=4938729429&Signature=Qa~bULdTm8~QxJENdTZ3cGaBCo7EZk2lsq5LmxkH~epvxTipEQpBDPn67qUiZNvfMosHipYE8EKyWggdpewgRJzV~SjVwjoSZJNXXP8pQrBy3dp1riEckf4xordmRo7VxOB7GR-UowWAfPbedbLIRh0ivIy~Szp78P0opYczpnxBGMCT9-UjbeVrDbL2IaKPrsmojUbkzNTQQ3yLqZHOX5O8DXKk3fq1iO~ZozSyQ1DPfbU6FHj0TdNOMWDuU7Qqs2o5SoAajRstgEmP6tpapdXN4Y5y8ANYU7KO9iVGOKpHGQfp3SFXWVa-GbCmeRYHuHsR4zUl5-P1~lCOTnEIqA__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/6f6ea8f2d7ce4916b734fd9e0479ca24.php4lzpsi?Expires=4938729354&Signature=ffiCEtrpgE711FvPkv6q1uqVxJdAJj3mCXgXZfQ~OWdd~na~FC53cZlIBSN9-vQR0hFM57nRD4i7YlTnsc4E04r6sh1Fn5jG~42AY4NNJqLOBwzCQEmQ0wLTNXHu2PxsKmdnNN2Za5ALUPbAHxsPMdY6M83Gtz6b5-u5C-5ywtWY4fTuqK-yf4LDzS3ZxGtFKn0pKWTGBvGPjweBP~B5O~1X00tqaQqqkx9zLSJjOVe8lQWgjge93zv-d2rK-TmoO~pgcghyV24dpKBb8PMB5rOQ2~hUS6uorft~exVaKdUs8m1J6vz31X72pWx~QoOl5bbJiskPLq6R8Ye5PwHPZw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/932c448447d04664b092b2a0a877760e.phpfpkzjo?Expires=4938729403&Signature=Sn1pvhyJZsA3vocVNxdqE48LUTDDSUCRdBPiWq9uMAdzuYluE44g6XQC46e~-8hAAEvTXAPrCcfB3262OqtAANFX7g04shsBazrmqSbshIY5UwNwP9p9UqxVe6ka43c4IUI5fLb0o5uDVaG~Gmddaj-PucZAPlqdEmw-MPEX6NS0EAylfvd2N9IoVC9ZlzbrUtUbOQtaJcR4-wdxSfrJU2leRKORq6W5tHiGOYVvc6ygLHkrP7djPy~0mVxhed4BSKJwOT1lg3GZTeCO2CKB~6kcN5PNsTvPSwYc5E0hBFI0u2bzzlM2aSorAUsgKwjkSfH~PJoHOONqEvWwQeLE~w__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/fe34d3116369405586bc554f1b90ef1f.phpgzfwfd?Expires=4938729333&Signature=h1vKdBfGv36EXvQB1sP2Bq4OEQNu7yYIx02IptvdQNbnyJf~MWM9CV~3V3yFlOvXCi0hDfIUk2vPVDG0vqtixu7ZrgtaXzErBITnvxIZQPZnqn8IdvkGXV39ZGbI-A6AeWApcj9bDPL9l4-MO6HvDQlAj03k6Tm~xoiO7-fC1LxqImLbASDNEU~rvePXhY2QPtpEqduvA~tWEVTJ3iTYavWgDsRzpFQpFRHTOhjpV7SKjUIywnHAYLUcjTwbIYehfXH0JlKODHZeMrMFZIkdUAkcSiN4wiOZi8gLjv1pQAQpvU~n9V81TVxHO6n53YJDstrO8cY3y0yHHXOOQFXqEQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tiempos Headline";
+    src: url("https://file.ontraport.com/media/3fdc22625d3b4f91a262f71fd5245252.phpbg4i9h?Expires=4938729250&Signature=Wvo5HyxM78OtwV1Aw20xmzg-5wImCXP2O53Xc145Vi6pnfp9s-kQ0AWfhrTTzaclT8zRkOMX4s40oW5WzqOP8Dhl1BZch6CSIM0BVXN97093tElhZwKi2wMHLeMMZf4RTPsY~AVlQX91LjkCDbXsBrkCI4MyOgFlaqoLz1qfzW5jfjiSqO-snsWVEpsagiAZD2JGwajiulMP76uSuTXrrI8FWxZBQrAD9-7Mcy-MXF2EHjSSFR3R4xFaWYVZ6PCrvJ3pngv5WuZvI-ry6TZqh0ICgeKn6B0dqYdYx3MZ53YrSwWKqeFy3Tdc30-tz~idjr5bJU13K23F46pyCuODtw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+  
+  
+/* =========================================================
+   LANDMARK MEMBER PORTAL — DESIGN SYSTEM FOUNDATION
+   ========================================================= */
+
+/* =========================================================
+   1. PORTAL WRAPPER + DESIGN TOKENS
+   ========================================================= */
+
+.lm-portal {
+  /* Brand colors */
+  --lm-teal: #0d2d31;
+  --lm-teal-deep: #0a2226;
+
+  --lm-green: #217a00;
+  --lm-green-bright: #2ea203;
+
+  --lm-almond: #efede7;
+  --lm-paper: #f7f5ef;
+  --lm-white: #ffffff;
+
+  --lm-coral: #f06449;
+  --lm-coral-ink: #c8452a;
+
+  --lm-ink: #0e1a19;
+  --lm-gray: #6f6b66;
+  --lm-muted: #8ba7a4;
+  --lm-line: #e6e2d8;
+  --lm-tabbar: #41454a;
+
+  /* Typography */
+  --lm-font-sans:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  --lm-font-serif:
+    "Tiempos Headline",
+    Georgia,
+    serif;
+
+  /* Layout */
+  --lm-container: 1180px;
+  --lm-gutter-desktop: 40px;
+  --lm-gutter-mobile: 22px;
+
+  /* Spacing scale */
+  --lm-space-1: 4px;
+  --lm-space-2: 8px;
+  --lm-space-3: 12px;
+  --lm-space-4: 16px;
+  --lm-space-5: 20px;
+  --lm-space-6: 24px;
+  --lm-space-7: 32px;
+  --lm-space-8: 36px;
+  --lm-space-9: 48px;
+  --lm-space-10: 52px;
+  --lm-space-11: 64px;
+  --lm-space-12: 70px;
+  --lm-space-13: 78px;
+
+  /* Borders and elevation */
+  --lm-radius-sm: 8px;
+  --lm-radius-md: 12px;
+  --lm-radius-lg: 18px;
+  --lm-radius-pill: 999px;
+
+  --lm-shadow-sm:
+    0 4px 18px rgba(14, 26, 25, 0.06);
+
+  --lm-shadow:
+    0 14px 44px rgba(14, 26, 25, 0.10);
+
+  /* Base appearance */
+  width: 100%;
+  color: var(--lm-ink);
+  background: var(--lm-paper);
+  font-family: var(--lm-font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* Scoped box sizing */
+
+.lm-portal,
+.lm-portal *,
+.lm-portal *::before,
+.lm-portal *::after {
+  box-sizing: border-box;
+}
+
+
+/* Base media behavior */
+
+.lm-portal img,
+.lm-portal svg,
+.lm-portal video {
+  max-width: 100%;
+}
+
+.lm-portal img {
+  height: auto;
+}
+
+.lm-portal a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   2. CONTAINER SYSTEM
+   ========================================================= */
+
+.lm-container {
+  width: 100% !important;
+  max-width: var(--lm-container) !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: var(--lm-gutter-desktop) !important;
+  padding-left: var(--lm-gutter-desktop) !important;
+}
+
+
+/*
+  Full-bleed background block:
+  Add lm-portal to the outer Ontraport block.
+
+  Constrained content:
+  Add lm-container to the inner row.
+*/
+
+
+/* Optional narrower reading containers */
+
+.lm-container--wide {
+  max-width: 1280px !important;
+}
+
+.lm-container--content {
+  max-width: 860px !important;
+}
+
+.lm-container--text {
+  max-width: 660px !important;
+}
+
+
+/* =========================================================
+   3. TYPOGRAPHY
+   ========================================================= */
+
+.lm-portal .lm-display,
+.lm-portal .lm-display .opt-text-wrapper,
+.lm-portal .lm-display .opt-text-wrapper * {
+  margin: 0;
+  color: var(--lm-ink) !important;
+  font-family: var(--lm-font-sans) !important;
+  font-size: clamp(38px, 4.6vw, 60px) !important;
+  font-weight: 800 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.02em !important;
+}
+
+
+/* Main section heading */
+
+.lm-portal .lm-heading,
+.lm-portal .lm-heading .opt-text-wrapper,
+.lm-portal .lm-heading .opt-text-wrapper * {
+  margin: 0;
+  color: var(--lm-ink) !important;
+  font-family: var(--lm-font-sans) !important;
+  font-size: clamp(26px, 3vw, 36px) !important;
+  font-weight: 800 !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.02em !important;
+}
+
+
+/* Smaller component heading */
+
+.lm-portal .lm-subheading,
+.lm-portal .lm-subheading .opt-text-wrapper,
+.lm-portal .lm-subheading .opt-text-wrapper * {
+  margin: 0;
+  color: var(--lm-ink) !important;
+  font-family: var(--lm-font-sans) !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.01em !important;
+}
+
+
+/* Large introductory paragraph */
+
+.lm-portal .lm-lede,
+.lm-portal .lm-lede .opt-text-wrapper,
+.lm-portal .lm-lede .opt-text-wrapper * {
+  margin: 0;
+  color: var(--lm-gray) !important;
+  font-family: var(--lm-font-sans) !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 1.62 !important;
+}
+
+
+/* Standard body copy */
+
+.lm-portal .lm-body,
+.lm-portal .lm-body .opt-text-wrapper,
+.lm-portal .lm-body .opt-text-wrapper * {
+  margin: 0;
+  color: var(--lm-gray) !important;
+  font-family: var(--lm-font-sans) !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+}
+
+
+/* Slightly larger section description */
+
+.lm-portal .lm-body-lg,
+.lm-portal .lm-body-lg .opt-text-wrapper,
+.lm-portal .lm-body-lg .opt-text-wrapper * {
+  margin: 0;
+  color: var(--lm-gray) !important;
+  font-family: var(--lm-font-sans) !important;
+  font-size: 16.5px !important;
+  font-weight: 400 !important;
+  line-height: 1.58 !important;
+}
+
+
+/* Supporting information */
+
+.lm-portal .lm-small,
+.lm-portal .lm-small .opt-text-wrapper,
+.lm-portal .lm-small .opt-text-wrapper * {
+  margin: 0;
+  color: var(--lm-gray) !important;
+  font-family: var(--lm-font-sans) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+}
+
+
+/* Eyebrow or section label */
+
+.lm-portal .lm-eyebrow,
+.lm-portal .lm-eyebrow .opt-text-wrapper,
+.lm-portal .lm-eyebrow .opt-text-wrapper * {
+  margin: 0;
+  color: var(--lm-green-bright) !important;
+  font-family: var(--lm-font-sans) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Tiempos italic accent */
+
+.lm-portal .lm-serif,
+.lm-portal .lm-serif .opt-text-wrapper,
+.lm-portal .lm-serif .opt-text-wrapper * {
+  font-family: var(--lm-font-serif) !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+}
+
+
+/*
+  Use lm-serif on a separate text element when building natively
+  in Ontraport.
+
+  Inside Custom HTML, it can be applied inline:
+
+  <span class="lm-serif">Your Forum</span>
+*/
+
+
+/* =========================================================
+   4. COLOR UTILITIES
+   ========================================================= */
+
+/* Backgrounds */
+
+.lm-bg-paper {
+  background-color: var(--lm-paper) !important;
+}
+
+.lm-bg-white {
+  background-color: var(--lm-white) !important;
+}
+
+.lm-bg-almond {
+  background-color: var(--lm-almond) !important;
+}
+
+.lm-bg-teal {
+  background-color: var(--lm-teal) !important;
+}
+
+.lm-bg-teal-deep {
+  background-color: var(--lm-teal-deep) !important;
+}
+
+.lm-bg-green {
+  background-color: var(--lm-green) !important;
+}
+
+.lm-bg-tabbar {
+  background-color: var(--lm-tabbar) !important;
+}
+
+
+/* Text colors */
+
+.lm-text-ink,
+.lm-text-ink .opt-text-wrapper,
+.lm-text-ink .opt-text-wrapper * {
+  color: var(--lm-ink) !important;
+}
+
+.lm-text-gray,
+.lm-text-gray .opt-text-wrapper,
+.lm-text-gray .opt-text-wrapper * {
+  color: var(--lm-gray) !important;
+}
+
+.lm-text-muted,
+.lm-text-muted .opt-text-wrapper,
+.lm-text-muted .opt-text-wrapper * {
+  color: var(--lm-muted) !important;
+}
+
+.lm-text-green,
+.lm-text-green .opt-text-wrapper,
+.lm-text-green .opt-text-wrapper * {
+  color: var(--lm-green) !important;
+}
+
+.lm-text-green-bright,
+.lm-text-green-bright .opt-text-wrapper,
+.lm-text-green-bright .opt-text-wrapper * {
+  color: var(--lm-green-bright) !important;
+}
+
+.lm-text-coral,
+.lm-text-coral .opt-text-wrapper,
+.lm-text-coral .opt-text-wrapper * {
+  color: var(--lm-coral) !important;
+}
+
+.lm-text-white,
+.lm-text-white .opt-text-wrapper,
+.lm-text-white .opt-text-wrapper * {
+  color: var(--lm-white) !important;
+}
+
+
+/* Borders */
+
+.lm-border {
+  border: 1px solid var(--lm-line) !important;
+}
+
+.lm-border-top {
+  border-top: 1px solid var(--lm-line) !important;
+}
+
+.lm-border-bottom {
+  border-bottom: 1px solid var(--lm-line) !important;
+}
+
+
+/* =========================================================
+   5. SECTION SPACING
+   ========================================================= */
+
+/* Standard portal section */
+
+.lm-section {
+  width: 100%;
+  padding-top: var(--lm-space-12) !important;
+  padding-bottom: var(--lm-space-12) !important;
+}
+
+
+/* Hero-style spacing */
+
+.lm-section--hero {
+  padding-top: var(--lm-space-12) !important;
+  padding-bottom: var(--lm-space-13) !important;
+}
+
+
+/* Medium section */
+
+.lm-section--medium {
+  padding-top: var(--lm-space-10) !important;
+  padding-bottom: var(--lm-space-10) !important;
+}
+
+
+/* Compact section */
+
+.lm-section--compact {
+  padding-top: var(--lm-space-8) !important;
+  padding-bottom: var(--lm-space-8) !important;
+}
+
+
+/* No vertical spacing */
+
+.lm-section--flush {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+/* Section heading group */
+
+.lm-section-heading {
+  width: 100%;
+  max-width: 660px;
+  margin-bottom: 36px !important;
+}
+
+.lm-section-heading > * + * {
+  margin-top: 10px !important;
+}
+
+
+/* Anchor offset for sticky navigation */
+
+.lm-anchor {
+  scroll-margin-top: 145px;
+}
+
+
+/* =========================================================
+   6. STACK AND GAP UTILITIES
+   ========================================================= */
+
+.lm-stack-8 > * + * {
+  margin-top: 8px !important;
+}
+
+.lm-stack-12 > * + * {
+  margin-top: 12px !important;
+}
+
+.lm-stack-16 > * + * {
+  margin-top: 16px !important;
+}
+
+.lm-stack-20 > * + * {
+  margin-top: 20px !important;
+}
+
+.lm-stack-24 > * + * {
+  margin-top: 24px !important;
+}
+
+.lm-stack-32 > * + * {
+  margin-top: 32px !important;
+}
+
+.lm-stack-36 > * + * {
+  margin-top: 36px !important;
+}
+
+.lm-gap-16 {
+  gap: 16px !important;
+}
+
+.lm-gap-24 {
+  gap: 24px !important;
+}
+
+.lm-gap-32 {
+  gap: 32px !important;
+}
+
+.lm-gap-54 {
+  gap: 54px !important;
+}
+
+
+/* =========================================================
+   7. SURFACE UTILITIES
+   ========================================================= */
+
+.lm-card {
+  background: var(--lm-white);
+  border: 1px solid var(--lm-line);
+  border-radius: var(--lm-radius-lg);
+}
+
+.lm-shadow-sm {
+  box-shadow: var(--lm-shadow-sm);
+}
+
+.lm-shadow {
+  box-shadow: var(--lm-shadow);
+}
+
+
+/* =========================================================
+   8. RESPONSIVE FOUNDATION
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .lm-gap-54 {
+    gap: 34px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .lm-container {
+    padding-right: var(--lm-gutter-mobile) !important;
+    padding-left: var(--lm-gutter-mobile) !important;
+  }
+
+  .lm-section,
+  .lm-section--hero,
+  .lm-section--medium {
+    padding-top: var(--lm-space-10) !important;
+    padding-bottom: var(--lm-space-10) !important;
+  }
+
+  .lm-section--compact {
+    padding-top: var(--lm-space-7) !important;
+    padding-bottom: var(--lm-space-7) !important;
+  }
+
+  .lm-portal .lm-lede,
+  .lm-portal .lm-lede .opt-text-wrapper,
+  .lm-portal .lm-lede .opt-text-wrapper * {
+    font-size: 17px !important;
+  }
+}
+  
+/* =========================================================
+   9. PRIMARY PORTAL NAVIGATION
+   ========================================================= */
+
+.lm-nav {
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  min-height: 78px;
+
+  background: var(--lm-white) !important;
+  border-bottom: 1px solid var(--lm-line);
+}
+
+
+/* =========================================================
+   NAVIGATION — LOGO
+   ========================================================= */
+
+.lm-nav .lm-nav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.lm-nav .lm-nav__logo img {
+  display: block;
+
+  width: auto !important;
+  height: 46px !important;
+  max-width: none !important;
+  max-height: 46px !important;
+}
+
+
+/* =========================================================
+   NAVIGATION — CENTER LINKS
+   ========================================================= */
+
+.lm-nav .lm-nav__links {
+  width: 100%;
+  text-align: center;
+}
+
+.lm-nav .lm-nav__links a,
+.lm-nav .lm-nav__links .opt-navigation-menu__link-text {
+  color: var(--lm-green-bright) !important;
+
+  font-family: var(--lm-font-sans) !important;
+  font-size: 14.5px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+
+  text-decoration: none !important;
+  white-space: nowrap;
+
+  transition:
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+.lm-nav .lm-nav__links a:hover,
+.lm-nav .lm-nav__links .opt-navigation-menu__link-text:hover {
+  color: var(--lm-ink) !important;
+}
+
+
+/* =========================================================
+   NAVIGATION — RIGHT-SIDE CONTROLS
+   ========================================================= */
+
+.lm-nav .lm-nav-actions-wrap {
+  width: 100% !important;
+}
+
+.lm-nav .lm-nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+
+  width: 100%;
+}
+
+
+/* Participant avatar */
+
+.lm-nav .lm-nav-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+
+  width: 42px;
+  height: 42px;
+  padding-top: 2px;
+
+  color: var(--lm-white);
+  background: var(--lm-green-bright);
+  border-radius: 50%;
+
+  font-family: var(--lm-font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+
+  cursor: default;
+}
+
+.lm-nav .lm-nav-avatar__initial {
+  display: block;
+
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+  line-height: 1;
+}
+
+
+/* Hamburger button */
+
+.lm-nav .lm-nav-menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+  gap: 4px;
+
+  width: 42px;
+  height: 42px;
+  padding: 0;
+
+  background: var(--lm-white);
+  border: 1px solid var(--lm-line);
+  border-radius: 50%;
+
+  appearance: none;
+  cursor: pointer;
+
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.lm-nav .lm-nav-menu-toggle span {
+  display: block;
+
+  width: 16px;
+  height: 1.7px;
+
+  background: var(--lm-teal);
+  border-radius: 2px;
+
+  pointer-events: none;
+}
+
+.lm-nav .lm-nav-menu-toggle:hover {
+  border-color: rgba(13, 45, 49, 0.28);
+  box-shadow: 0 4px 14px rgba(14, 26, 25, 0.10);
+  transform: translateY(-1px);
+}
+
+.lm-nav .lm-nav-menu-toggle:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.lm-nav .lm-nav-menu-toggle:focus-visible {
+  outline: 3px solid rgba(46, 162, 3, 0.24);
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   NAVIGATION — RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .lm-nav .lm-nav__links {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .lm-nav {
+    min-height: 70px;
+  }
+
+  .lm-nav .lm-nav__logo img {
+    height: 38px !important;
+    max-height: 38px !important;
+  }
+
+  .lm-nav .lm-nav-actions {
+    gap: 12px;
+  }
+
+  .lm-nav .lm-nav-avatar,
+  .lm-nav .lm-nav-menu-toggle {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
+  
+  /* =========================================================
+   10. PROGRAM NAVIGATION TABS
+   ========================================================= */
+
+.lm-program-tabs {
+  position: sticky !important;
+  top: 78px;
+  z-index: 90;
+
+  width: 100%;
+  min-height: 48px;
+
+  background: var(--lm-tabbar) !important;
+}
+
+.lm-program-tabs .lm-program-tabs-wrap {
+  width: 100% !important;
+}
+
+.lm-program-tabs .lm-program-tabs__inner {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 66px;
+
+  width: 100%;
+  max-width: var(--lm-container);
+  height: 48px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-right: var(--lm-gutter-desktop);
+  padding-left: var(--lm-gutter-desktop);
+}
+
+
+/* Individual tab */
+
+.lm-program-tabs .lm-program-tab {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 48px;
+  padding: 0 18px;
+
+  color: rgba(255, 255, 255, 0.58) !important;
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.20em;
+
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  transition:
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+.lm-program-tabs .lm-program-tab:hover {
+  color: rgba(255, 255, 255, 0.84) !important;
+}
+
+
+/* Active tab */
+
+.lm-program-tabs .lm-program-tab--active {
+  color: var(--lm-white) !important;
+}
+
+.lm-program-tabs .lm-program-tab--active::after {
+  content: "";
+
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  left: 50%;
+
+  width: 230px;
+  height: 3px;
+
+  background: var(--lm-green-bright);
+  border-radius: 2px 2px 0 0;
+
+  transform: translateX(-50%);
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .lm-program-tabs {
+    top: 70px;
+  }
+
+  .lm-program-tabs .lm-program-tabs__inner {
+    gap: 20px;
+
+    padding-right: var(--lm-gutter-mobile);
+    padding-left: var(--lm-gutter-mobile);
+  }
+
+  .lm-program-tabs .lm-program-tab {
+    flex: 1 1 50%;
+
+    padding-right: 4px;
+    padding-left: 4px;
+
+    font-size: 9px;
+    letter-spacing: 0.15em;
+  }
+
+  .lm-program-tabs .lm-program-tab--active::after {
+    width: 100%;
+    max-width: 170px;
+  }
+}
+  
+  .lm-program-tabs .lm-program-tabs-wrap,
+.lm-program-tabs .lm-program-tabs-wrap > div,
+.lm-program-tabs .lm-program-tabs__inner {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+  
+  .lm-program-tabs {
+  position: sticky !important;
+  top: 78px;
+  z-index: 90;
+
+  width: 100%;
+  min-height: 48px;
+
+  background-color: var(--lm-tabbar) !important;
+  border: 0 !important;
+}
+
+  /* =========================================================
+   11. PRE-EVENT HERO
+   ========================================================= */
+
+.lm-hero {
+  width: 100%;
+
+  padding-top: 70px !important;
+  padding-bottom: 78px !important;
+
+  background: var(--lm-almond) !important;
+}
+
+
+/* =========================================================
+   HERO — ONTRAPORT WRAPPER RESET
+   ========================================================= */
+
+/*
+  Reset only visual styles on the Ontraport wrapper.
+  Do not override its margins, padding, or positioning.
+*/
+
+.lm-hero .lm-hero-wrap {
+  width: 100% !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.lm-hero .lm-hero-wrap > div {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   HERO — MAIN LAYOUT
+   ========================================================= */
+
+.lm-hero .lm-hero__inner {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.25fr)
+    minmax(360px, 0.95fr);
+  align-items: center;
+  gap: 54px;
+
+  width: calc(100% - 80px);
+  max-width: 1100px;
+
+  margin-right: auto !important;
+  margin-left: auto !important;
+
+  padding: 0;
+}
+
+
+/* =========================================================
+   HERO — LEFT COPY
+   ========================================================= */
+
+.lm-hero .lm-hero__copy {
+  min-width: 0;
+}
+
+.lm-hero .lm-hero__eyebrow {
+  margin: 0;
+
+  color: var(--lm-green-bright);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+}
+
+.lm-hero .lm-hero__title {
+  max-width: 650px;
+
+  margin-top: 14px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+
+  color: var(--lm-ink);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: clamp(38px, 4.6vw, 60px);
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.lm-hero .lm-hero__serif {
+  font-family:
+    "Tiempos Headline",
+    Georgia,
+    serif !important;
+
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lm-hero .lm-hero__lede {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: var(--lm-gray);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.62;
+}
+
+
+/* =========================================================
+   HERO — EVENT CARD
+   ========================================================= */
+
+.lm-hero .lm-event-card {
+  width: 100%;
+  min-width: 0;
+
+  margin: 0;
+  padding: 28px 30px;
+
+  color: var(--lm-ink);
+  background: var(--lm-white);
+
+  border: 1px solid var(--lm-line);
+  border-radius: var(--lm-radius-lg);
+  box-shadow: var(--lm-shadow);
+}
+
+.lm-hero .lm-event-card__eyebrow {
+  margin: 0;
+
+  color: var(--lm-green-bright);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+.lm-hero .lm-event-card__dates {
+  margin-top: 7px;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-left: 0;
+
+  color: var(--lm-ink);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 25px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.lm-hero .lm-event-card__graduation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 14px;
+  margin-left: 0;
+
+  color: var(--lm-gray);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.lm-hero .lm-event-card__graduation strong {
+  color: var(--lm-green-bright);
+  font-weight: 700;
+}
+
+.lm-hero .lm-event-card__details {
+  padding-top: 13px;
+
+  color: var(--lm-gray);
+  border-top: 1px solid var(--lm-line);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 12.5px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   HERO — COUNTDOWN
+   ========================================================= */
+
+.lm-hero .lm-event-card__countdown-label {
+  margin-top: 16px;
+  margin-right: 0;
+  margin-bottom: 8px;
+  margin-left: 0;
+
+  color: var(--lm-muted);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 10.5px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.lm-hero .lm-event-card__countdown {
+  display: flex;
+  gap: 10px;
+
+  width: 100%;
+
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.lm-hero .lm-countdown-cell {
+  flex: 1 1 0;
+  min-width: 0;
+
+  padding: 14px 6px;
+
+  background: var(--lm-paper);
+  border: 1px solid var(--lm-line);
+  border-radius: var(--lm-radius-md);
+
+  text-align: center;
+}
+
+.lm-hero .lm-countdown-number {
+  color: var(--lm-teal);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 30px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.lm-hero .lm-countdown-unit {
+  margin-top: 7px;
+
+  color: var(--lm-gray);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO — ARRIVAL NOTE
+   ========================================================= */
+
+.lm-hero .lm-event-card__note {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+
+  color: var(--lm-gray);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 13.5px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.55;
+}
+
+.lm-hero .lm-event-card__note strong {
+  color: var(--lm-ink);
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   HERO — CALENDAR BUTTON
+   ========================================================= */
+
+.lm-hero .lm-event-card__calendar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  width: 100%;
+  min-height: 43px;
+
+  margin: 0;
+  padding: 13px;
+
+  color: var(--lm-white);
+  background: var(--lm-green-bright);
+
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 8px 22px rgba(45, 174, 14, 0.22);
+
+  appearance: none;
+  cursor: pointer;
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+
+  transition:
+    background-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 100ms ease;
+}
+
+.lm-hero .lm-event-card__calendar-button svg {
+  display: block;
+  flex: 0 0 17px;
+
+  width: 17px;
+  height: 17px;
+}
+
+.lm-hero .lm-event-card__calendar-button span {
+  position: relative;
+  top: 1px;
+}
+
+.lm-hero .lm-event-card__calendar-button:hover {
+  background: var(--lm-green);
+  box-shadow: 0 10px 26px rgba(45, 174, 14, 0.26);
+
+  transform: translateY(-1px);
+}
+
+.lm-hero .lm-event-card__calendar-button:active {
+  box-shadow: 0 5px 14px rgba(45, 174, 14, 0.18);
+
+  transform: translateY(0);
+}
+
+.lm-hero .lm-event-card__calendar-button:focus-visible {
+  outline: 3px solid rgba(46, 162, 3, 0.24);
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   HERO — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .lm-hero {
+    padding-top: 52px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .lm-hero .lm-hero__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+  }
+
+  .lm-hero .lm-hero__lede {
+    max-width: 640px;
+  }
+
+  .lm-hero .lm-event-card {
+    max-width: 620px;
+  }
+
+
+
+/* =========================================================
+   HERO — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .lm-hero {
+    padding-top: 46px !important;
+    padding-bottom: 52px !important;
+  }
+
+  .lm-hero .lm-hero__inner {
+    width: calc(100% - 44px);
+    max-width: none;
+  }
+
+  .lm-hero .lm-hero__title {
+    font-size: clamp(38px, 12vw, 50px);
+  }
+
+  .lm-hero .lm-hero__lede {
+    font-size: 17px;
+  }
+
+  .lm-hero .lm-event-card {
+    padding: 24px 22px;
+  }
+
+  .lm-hero .lm-event-card__dates {
+    font-size: 22px;
+  }
+
+.lm-hero .lm-countdown-number {
+  font-size: 26px;
+}
+
+/* Close @media (max-width: 600px) */
+}
+
+
+/* =========================================================
+   12. PREPARE FOR YOUR FORUM
+   ========================================================= */
+
+.lm-prepare {
+  width: 100%;
+
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
+
+  background: var(--lm-paper) !important;
+}
+
+/* =========================================================
+   PREPARE — ONTRAPORT WRAPPER RESET
+   ========================================================= */
+
+.lm-prepare .lm-prepare-wrap {
+  width: 100% !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.lm-prepare .lm-prepare-wrap > div {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   PREPARE — INNER CONTAINER
+   ========================================================= */
+
+.lm-prepare .lm-prepare__inner {
+  width: calc(100% - 80px);
+  max-width: 1100px;
+
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+
+/* =========================================================
+   PREPARE — SECTION HEADER
+   ========================================================= */
+
+.lm-prepare .lm-prepare__header {
+  width: 100%;
+  max-width: 660px;
+
+  margin-bottom: 36px;
+}
+
+.lm-prepare .lm-prepare__eyebrow {
+  margin: 0;
+
+  color: var(--lm-green-bright);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+}
+
+.lm-prepare .lm-prepare__heading {
+  margin-top: 12px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+
+  color: var(--lm-ink);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.lm-prepare .lm-prepare__intro {
+  margin: 0;
+
+  color: var(--lm-gray);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 16.5px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.58;
+}
+
+
+/* =========================================================
+   PREPARE — CARD GRID
+   ========================================================= */
+
+.lm-prepare .lm-prepare__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   PREPARE — INDIVIDUAL CARD
+   ========================================================= */
+
+.lm-prepare .lm-prepare-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  overflow: hidden;
+
+  background: var(--lm-white);
+  border: 1px solid var(--lm-line);
+  border-radius: 16px;
+  box-shadow: var(--lm-shadow-sm);
+
+  transition: box-shadow 220ms ease;
+}
+
+.lm-prepare .lm-prepare-card:hover {
+  box-shadow: 0 22px 54px rgba(14, 26, 25, 0.16);
+}
+
+
+/* =========================================================
+   PREPARE — CARD IMAGE
+   ========================================================= */
+
+.lm-prepare .lm-prepare-card__image {
+  position: relative;
+
+  flex: 0 0 186px;
+
+  width: 100%;
+  height: 186px;
+  overflow: hidden;
+
+  background: var(--lm-almond);
+}
+
+.lm-prepare .lm-prepare-card__image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.lm-prepare .lm-prepare-card__image--calendar {
+  object-position: 50% 20% !important;
+}
+
+
+/* Action-needed badge */
+
+.lm-prepare .lm-prepare-card__badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  padding: 5px 10px;
+
+  color: var(--lm-white);
+  background: var(--lm-coral);
+  border-radius: var(--lm-radius-pill);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 10.5px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   PREPARE — CARD BODY
+   ========================================================= */
+
+.lm-prepare .lm-prepare-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  padding: 24px 26px 26px;
+}
+
+.lm-prepare .lm-prepare-card__tag {
+  margin-bottom: 3px;
+
+  color: var(--lm-green-bright);
+
+  font-family:
+    "Tiempos Headline",
+    Georgia,
+    serif !important;
+
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.lm-prepare .lm-prepare-card__title {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 9px;
+  margin-left: 0;
+
+  color: var(--lm-ink);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.lm-prepare .lm-prepare-card__description {
+  flex: 1;
+
+  margin: 0;
+
+  color: var(--lm-muted);
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 14.5px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.62;
+}
+
+
+/* =========================================================
+   PREPARE — CARD ACTION
+   ========================================================= */
+
+.lm-prepare .lm-prepare-card__action {
+  align-self: flex-start;
+
+  margin-top: 18px;
+  padding: 0;
+
+  color: var(--lm-green-bright);
+  background: transparent;
+
+  border: 0;
+  border-radius: 0;
+
+  appearance: none;
+  cursor: pointer;
+
+  font-family:
+    "objektiv-mk1",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.4;
+
+  text-align: left;
+
+  transition: color 150ms ease;
+}
+
+.lm-prepare .lm-prepare-card__action:hover {
+  color: var(--lm-green);
+}
+
+.lm-prepare .lm-prepare-card__action:focus-visible {
+  outline: 3px solid rgba(46, 162, 3, 0.22);
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   PREPARE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .lm-prepare .lm-prepare__cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lm-prepare .lm-prepare-card {
+    max-width: 640px;
+  }
+}
+
+
+/* =========================================================
+   PREPARE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .lm-prepare {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+  }
+
+  .lm-prepare .lm-prepare__inner {
+    width: calc(100% - 44px);
+    max-width: none;
+  }
+
+  .lm-prepare .lm-prepare__header {
+    margin-bottom: 30px;
+  }
+
+  .lm-prepare .lm-prepare-card__body {
+    padding: 22px 22px 24px;
+  }
+ 
+  .lm-prepare .lm-prepare-card__image {
+  height: 18px !important;
+  overflow: hidden !important;
+}
+</style>
