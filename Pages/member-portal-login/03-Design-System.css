@@ -1,0 +1,52 @@
+/* =========================================================
+   LANDMARK — DESIGN SYSTEM (page-independent)
+   Reusable across LWW portal pages. Paste once at page level
+   (or into a shared global stylesheet). Contains font
+   declarations, design tokens, and base resets only.
+   ========================================================= */
+
+/* 1. FONTS -------------------------------------------------
+   Body/heading/button font: "objektiv-mk1".
+   Source page loads it via Adobe Fonts (Typekit) kit gwi7lul.
+   Keep this <link> in the Ontraport page <head>:
+     <link rel="stylesheet" href="https://use.typekit.net/gwi7lul.css">
+   ALTERNATIVE (project consistency): the LWW repo self-hosts
+   objektiv-mk1 from file.ontraport.com in portal-pre-event.css.
+   Swap to those @font-face rules if the project standard is
+   self-hosting. Flagged in 00-Assets-Needed.md.
+
+   Display font: "Tiempos Headline" (Light Italic) — used only
+   by the stage eyebrow. Source embeds it as a base64 WOFF2.
+   Replace the src with the Ontraport-hosted URL once uploaded
+   (source/extracted-assets/tiempos-headline-light-italic.woff2). */
+@font-face {
+  font-family: "Tiempos Headline";
+  /* ASSET: replace with Ontraport URL for tiempos-headline-light-italic.woff2 */
+  src: url("REPLACE_WITH_ONTRAPORT_URL/tiempos-headline-light-italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* 2. DESIGN TOKENS ----------------------------------------- */
+:root {
+  --lm-primary: #0d2d31;       /* Teal        — Block 5 */
+  --lm-primary-deep: #0a2226;  /* Deep Teal   — Block 6 */
+  --lm-green: #217a00;
+  --lm-green-bright: #2ea203;
+  --lm-almond: #efede7;        /* Almond      — Block 4 */
+  --lm-gray: #757171;
+  --lm-muted: #8ba7a4;
+  --lm-coral: #f06449;
+}
+
+/* 3. BASE RESETS ------------------------------------------- */
+/* Scoped under .lm-login-wrap so these do not leak into other
+   Ontraport blocks on shared pages. */
+.lm-login-wrap *,
+.lm-login-wrap *::before,
+.lm-login-wrap *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

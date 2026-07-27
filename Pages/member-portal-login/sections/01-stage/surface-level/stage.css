@@ -1,0 +1,101 @@
+/* =========================================================
+   SECTION 01 — STAGE (branded left column)
+   Scoped under .lm-login-wrap. The split-flex foundation
+   (.lm-login__inner) lives in 04-Master-Page.css / foundation.
+   ========================================================= */
+
+.lm-login-wrap .lm-login__stage {
+  position: relative;
+  flex: 1.35 1 0;
+  min-width: 0;
+  /* ASSET: replace with Ontraport URL for member-portal-stage-bg.jpg */
+  background: url("REPLACE_WITH_ONTRAPORT_URL/member-portal-stage-bg.jpg") center 42% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 44px 52px 56px;
+}
+
+.lm-login-wrap .lm-login__stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 18% 90%, rgba(33, 122, 0, .18), transparent 60%),
+    linear-gradient(180deg,
+      rgba(10, 34, 38, .66) 0%,
+      rgba(10, 34, 38, .58) 7%,
+      rgba(10, 34, 38, .22) 18%,
+      rgba(10, 34, 38, .08) 32%,
+      rgba(10, 34, 38, .10) 60%,
+      rgba(10, 34, 38, .30) 80%,
+      rgba(10, 34, 38, .90) 100%);
+  z-index: 1;
+}
+
+.lm-login-wrap .lm-login__stage > * {
+  position: relative;
+  z-index: 2;
+}
+
+.lm-login-wrap .lm-login__brand-logo {
+  height: 34px;
+  width: auto;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  display: block;
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .35));
+}
+
+.lm-login-wrap .lm-login__stage-copy {
+  max-width: 620px;
+}
+
+.lm-login-wrap .lm-login__eyebrow {
+  font-family: "Tiempos Headline", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 29px);
+  color: rgba(255, 255, 255, .92);
+  margin-bottom: 6px;
+  letter-spacing: .01em;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, .35);
+}
+
+.lm-login-wrap .lm-login__title {
+  font-family: "objektiv-mk1", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.015em;
+  line-height: .9;
+  font-size: clamp(46px, 6.4vw, 96px);
+  color: #fff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, .35);
+}
+
+.lm-login-wrap .lm-login__rule {
+  width: 54px;
+  height: 3px;
+  background: var(--lm-green-bright);
+  margin-top: 22px;
+  border-radius: 2px;
+}
+
+/* Responsive — stack the split below 900px */
+@media (max-width: 900px) {
+  .lm-login-wrap .lm-login__stage {
+    flex: none;
+    min-height: 44vh;
+    padding: 30px 30px 38px;
+  }
+  .lm-login-wrap .lm-login__title {
+    font-size: clamp(40px, 10vw, 64px);
+  }
+}
+
+@media (max-width: 420px) {
+  .lm-login-wrap .lm-login__stage {
+    padding: 24px 22px 30px;
+  }
+}
