@@ -1,0 +1,1427 @@
+/* =========================================================
+   LANDMARK PORTAL — SELF-HOSTED FONTS
+   ========================================================= */
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/ba7ff633d6c04ce990ea8dcd412628be.phpog5fus?Expires=4938729439&Signature=QwdJNIufBp6Ban7cBFYbg5WnIUYhX3YmhJoGG2Wcp2RvojQM1Y196zA23ANoo~LXamoPi7pi2BVvRyf1JIKGV7LMgdY2icTw~TDwqhZh6SoscuGQla43z-9Bj4q7jzhyJk4gYTEGdhFJQO1VYLVLDPfIFScQA8lZemPBovwTBjxtdAVxroKXujW6YEatuk1FNLPkmNPR1R8DljQbsvccTz9F2k~OgFNI3B6S3ozK3dRAQOsYt7Z25MuYkvt54Li9CMeHBBVZStip8W3q56l4XtsWDqmI2ZtE~xyk9AH6LAQYBE8zqz~WgYjDC1whzMvQFkqBHQ6W3T5lM32CwuoZqg__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/ce5b7e54997044a8b8a5001b7929ff4f.phphgrpey?Expires=4938729384&Signature=Uw6VytthceXwol5adfB8zHZJEh9q6KEUGEm0MXcodLDwRWdRbtsd-6BE69XOYtQRk58794AwDDR2c5BJAqAXH5SVcntlyRWqlYMV~x2kHI1qTPARzWAKTAlPPQn7LUNUYhBr0ZFNAd~bXmEtDvUDJ0RaQwDiR0c49Ix0DZ1CH7mgoiKGigwnmEuISJR~eWQHs2aVUeqXYzeGY6EreetDIT98KSri01gCB0j8Ivo61DwVB5cB~O4qYwaJHr5my99Ss8Gaq40EhbDVDPdHcJrJDeey~QBUu2w~qEaUUfBWIr8EkxCMitSt9t5pRvfuxwuvXUYwFAGlj2yG4cqz7lOxEQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/7a3cb7f1f1a7454ab43f02da2e28d747.phpegn3xv?Expires=4938729429&Signature=Qa~bULdTm8~QxJENdTZ3cGaBCo7EZk2lsq5LmxkH~epvxTipEQpBDPn67qUiZNvfMosHipYE8EKyWggdpewgRJzV~SjVwjoSZJNXXP8pQrBy3dp1riEckf4xordmRo7VxOB7GR-UowWAfPbedbLIRh0ivIy~Szp78P0opYczpnxBGMCT9-UjbeVrDbL2IaKPrsmojUbkzNTQQ3yLqZHOX5O8DXKk3fq1iO~ZozSyQ1DPfbU6FHj0TdNOMWDuU7Qqs2o5SoAajRstgEmP6tpapdXN4Y5y8ANYU7KO9iVGOKpHGQfp3SFXWVa-GbCmeRYHuHsR4zUl5-P1~lCOTnEIqA__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/6f6ea8f2d7ce4916b734fd9e0479ca24.php4lzpsi?Expires=4938729354&Signature=ffiCEtrpgE711FvPkv6q1uqVxJdAJj3mCXgXZfQ~OWdd~na~FC53cZlIBSN9-vQR0hFM57nRD4i7YlTnsc4E04r6sh1Fn5jG~42AY4NNJqLOBwzCQEmQ0wLTNXHu2PxsKmdnNN2Za5ALUPbAHxsPMdY6M83Gtz6b5-u5C-5ywtWY4fTuqK-yf4LDzS3ZxGtFKn0pKWTGBvGPjweBP~B5O~1X00tqaQqqkx9zLSJjOVe8lQWgjge93zv-d2rK-TmoO~pgcghyV24dpKBb8PMB5rOQ2~hUS6uorft~exVaKdUs8m1J6vz31X72pWx~QoOl5bbJiskPLq6R8Ye5PwHPZw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/932c448447d04664b092b2a0a877760e.phpfpkzjo?Expires=4938729403&Signature=Sn1pvhyJZsA3vocVNxdqE48LUTDDSUCRdBPiWq9uMAdzuYluE44g6XQC46e~-8hAAEvTXAPrCcfB3262OqtAANFX7g04shsBazrmqSbshIY5UwNwP9p9UqxVe6ka43c4IUI5fLb0o5uDVaG~Gmddaj-PucZAPlqdEmw-MPEX6NS0EAylfvd2N9IoVC9ZlzbrUtUbOQtaJcR4-wdxSfrJU2leRKORq6W5tHiGOYVvc6ygLHkrP7djPy~0mVxhed4BSKJwOT1lg3GZTeCO2CKB~6kcN5PNsTvPSwYc5E0hBFI0u2bzzlM2aSorAUsgKwjkSfH~PJoHOONqEvWwQeLE~w__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/fe34d3116369405586bc554f1b90ef1f.phpgzfwfd?Expires=4938729333&Signature=h1vKdBfGv36EXvQB1sP2Bq4OEQNu7yYIx02IptvdQNbnyJf~MWM9CV~3V3yFlOvXCi0hDfIUk2vPVDG0vqtixu7ZrgtaXzErBITnvxIZQPZnqn8IdvkGXV39ZGbI-A6AeWApcj9bDPL9l4-MO6HvDQlAj03k6Tm~xoiO7-fC1LxqImLbASDNEU~rvePXhY2QPtpEqduvA~tWEVTJ3iTYavWgDsRzpFQpFRHTOhjpV7SKjUIywnHAYLUcjTwbIYehfXH0JlKODHZeMrMFZIkdUAkcSiN4wiOZi8gLjv1pQAQpvU~n9V81TVxHO6n53YJDstrO8cY3y0yHHXOOQFXqEQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tiempos Headline";
+    src: url("https://file.ontraport.com/media/3fdc22625d3b4f91a262f71fd5245252.phpbg4i9h?Expires=4938729250&Signature=Wvo5HyxM78OtwV1Aw20xmzg-5wImCXP2O53Xc145Vi6pnfp9s-kQ0AWfhrTTzaclT8zRkOMX4s40oW5WzqOP8Dhl1BZch6CSIM0BVXN97093tElhZwKi2wMHLeMMZf4RTPsY~AVlQX91LjkCDbXsBrkCI4MyOgFlaqoLz1qfzW5jfjiSqO-snsWVEpsagiAZD2JGwajiulMP76uSuTXrrI8FWxZBQrAD9-7Mcy-MXF2EHjSSFR3R4xFaWYVZ6PCrvJ3pngv5WuZvI-ry6TZqh0ICgeKn6B0dqYdYx3MZ53YrSwWKqeFy3Tdc30-tz~idjr5bJU13K23F46pyCuODtw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*
+ * Landmark Portal Design System — Production
+ * Version: 1.0.0
+ * Source: Landmark pre-event portal design
+ *
+ * Installation:
+ *   1. Wrap all portal markup in: <div class="lm-portal">...</div>
+ *   2. Load this stylesheet once on each portal page or in the shared page shell.
+ *
+ * Fonts:
+ *   - Objektiv MK1 is loaded from the existing Adobe Fonts kit below.
+ *   - Tiempos Headline is NOT bundled in this file. Load a separately licensed
+ *     webfont when available; Georgia is the built-in fallback.
+ *
+ * This file is intentionally scoped to .lm-portal to prevent style leakage into
+ * Ontraport page-builder UI, embedded forms, or unrelated site content.
+ */
+
+
+:root {
+    --teal: #0d2d31;
+    --teal-deep: #0a2226;
+    --green: #217a00;
+    --green-bright: #2ea203;
+    --almond: #efede7;
+    --paper: #f7f5ef;
+    --white: #ffffff;
+    --coral: #f06449;
+    --coral-ink: #c8452a;
+    --gray: #6f6b66;
+    --muted: #8ba7a4;
+    --ink: #0e1a19;
+    --line: #e6e2d8;
+    --tabbar: #41454a;
+    --shadow: 0 14px 44px rgba(14, 26, 25, .10);
+    --shadow-sm: 0 4px 18px rgba(14, 26, 25, .06);
+    --serif: "Tiempos Headline", Georgia, serif;
+    --sans: "objektiv-mk1", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* Production-safe base behavior */
+.lm-portal {
+    min-height: 100vh;
+}
+
+.lm-portal img,
+.lm-portal svg {
+    max-width: 100%;
+}
+
+.lm-portal button,
+.lm-portal input,
+.lm-portal select,
+.lm-portal textarea {
+    font: inherit;
+}
+
+.lm-portal a:focus-visible,
+.lm-portal button:focus-visible,
+.lm-portal summary:focus-visible,
+.lm-portal input:focus-visible,
+.lm-portal select:focus-visible,
+.lm-portal textarea:focus-visible,
+.lm-portal [tabindex]:not([tabindex="-1"]):focus-visible {
+    outline: 3px solid rgba(46, 162, 3, .55);
+    outline-offset: 3px;
+}
+
+.lm-portal,
+.lm-portal *,
+.lm-portal *::before,
+.lm-portal *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.lm-portal {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--paper);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.55;
+}
+
+.lm-portal a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.lm-portal .wrap {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.lm-portal .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--green-bright);
+}
+
+.lm-portal .serif-it {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.lm-portal .topnav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+}
+
+.lm-portal .topnav .row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    height: 78px;
+}
+
+.lm-portal .nav-logo {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.lm-portal .nav-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.lm-portal .nav-links a {
+    color: var(--green-bright);
+    font-size: 14.5px;
+    font-weight: 400;
+}
+
+.lm-portal .nav-links a:hover {
+    color: var(--green);
+}
+
+.lm-portal .nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.lm-portal .avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.lm-portal .burger {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.lm-portal .burger span {
+    display: block;
+    width: 16px;
+    height: 1.7px;
+    background: var(--teal);
+    border-radius: 2px;
+}
+
+.lm-portal .drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 320px;
+    max-width: 86vw;
+    background: var(--teal);
+    z-index: 70;
+    transform: translateX(100%);
+    transition: transform .28s ease;
+    box-shadow: -20px 0 60px rgba(0, 0, 0, .3);
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lm-portal .drawer.open {
+    transform: translateX(0);
+}
+
+.lm-portal .drawer .dhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.lm-portal .drawer .close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lm-portal .drawer a {
+    color: rgba(255, 255, 255, .86);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    cursor: pointer;
+}
+
+.lm-portal .drawer a:hover {
+    color: #fff;
+}
+
+.lm-portal .drawer .logout {
+    margin-top: auto;
+    color: var(--green-bright);
+    font-weight: 700;
+}
+
+.lm-portal .scrim {
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 16, 15, .5);
+    z-index: 60;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .28s ease;
+}
+
+.lm-portal .scrim.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* PROGRAM TABS — wide active underline */
+.lm-portal .progtabs {
+    background: var(--tabbar);
+}
+
+.lm-portal .progtabs .row {
+    display: flex;
+    justify-content: center;
+    gap: 66px;
+    height: 48px;
+    align-items: center;
+}
+
+.lm-portal .progtabs button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, .55);
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    height: 100%;
+    position: relative;
+}
+
+.lm-portal .progtabs button.active {
+    color: #fff;
+}
+
+.lm-portal .progtabs button.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 230px;
+    height: 3px;
+    background: var(--green-bright);
+    border-radius: 2px;
+}
+
+/* HERO */
+.lm-portal .hero {
+    background: var(--almond);
+    color: var(--ink);
+}
+
+.lm-portal .hero-inner {
+    display: grid;
+    grid-template-columns: 1.25fr .95fr;
+    gap: 54px;
+    align-items: center;
+    padding: 70px 0 78px;
+}
+
+.lm-portal .hero h1 {
+    font-size: clamp(38px, 4.6vw, 60px);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -.02em;
+    margin: 14px 0 20px;
+    color: var(--ink);
+}
+
+.lm-portal .hero h1 .serif-it {
+    font-weight: 300;
+}
+
+.lm-portal .hero .lede {
+    font-size: 18px;
+    line-height: 1.62;
+    color: var(--gray);
+    max-width: 520px;
+}
+
+.lm-portal .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 26px;
+    max-width: 560px;
+}
+
+.lm-portal .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 9px 15px;
+    font-size: 13.5px;
+    color: var(--ink);
+    box-shadow: var(--shadow-sm);
+}
+
+.lm-portal .chip svg {
+    width: 15px;
+    height: 15px;
+    color: var(--green);
+    flex: none;
+}
+
+.lm-portal .anchor {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 28px 30px;
+    box-shadow: var(--shadow);
+}
+
+.lm-portal .anchor .k {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--green-bright);
+}
+
+.lm-portal .anchor .when {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    color: var(--ink);
+    margin: 7px 0 20px;
+}
+
+.lm-portal .anchor .when .serif-it {
+    font-weight: 300;
+}
+
+.lm-portal .countdown {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 20px;
+}
+
+.lm-portal .cd-cell {
+    flex: 1;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 6px;
+    text-align: center;
+}
+
+.lm-portal .cd-num {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -.02em;
+    color: var(--teal);
+}
+
+.lm-portal .cd-lab {
+    font-size: 10px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-top: 7px;
+}
+
+.lm-portal .anchor .note {
+    font-size: 13.5px;
+    color: var(--gray);
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+.lm-portal .anchor .note b {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.lm-portal .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--sans);
+    font-weight: 700;
+    transition: background .15s, transform .05s;
+}
+
+.lm-portal .btn-lg {
+    width: 100%;
+    background: var(--green);
+    color: #fff;
+    padding: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    box-shadow: 0 8px 22px rgba(33, 122, 0, .20);
+}
+
+.lm-portal .btn-lg:hover {
+    background: var(--green-bright);
+}
+
+.lm-portal .btn-lg:active {
+    transform: translateY(1px);
+}
+
+.lm-portal .btn-lg svg {
+    width: 17px;
+    height: 17px;
+}
+
+.lm-portal section.block {
+    padding: 70px 0;
+}
+
+.lm-portal .sec-head {
+    max-width: 660px;
+    margin-bottom: 36px;
+}
+
+.lm-portal .sec-head h2 {
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    margin: 12px 0 10px;
+    color: var(--ink);
+}
+
+.lm-portal .sec-head p {
+    color: var(--gray);
+    font-size: 16.5px;
+}
+
+.lm-portal .alt {
+    background: var(--almond);
+}
+
+.lm-portal .paper {
+    background: var(--paper);
+}
+
+/* PREPARE — dark photo cards (no hover "pop") */
+.lm-portal .pcards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.lm-portal .pcard {
+    position: relative;
+    background: var(--teal);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid var(--coral);
+    transition: box-shadow .25s;
+}
+
+.lm-portal .pcard:hover {
+    box-shadow: 0 22px 54px rgba(14, 26, 25, .22);
+}
+
+.lm-portal .pcard .ph {
+    height: 186px;
+    overflow: hidden;
+    position: relative;
+}
+
+.lm-portal .pcard .ph img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.lm-portal .pcard .badge2 {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: var(--coral);
+    color: #fff;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+}
+
+.lm-portal .pcard .pbody {
+    padding: 24px 26px 26px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.lm-portal .pcard .ptag {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--green-bright);
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.lm-portal .pcard h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 9px;
+    letter-spacing: -.01em;
+}
+
+.lm-portal .pcard p {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, .82);
+    line-height: 1.55;
+    flex: 1;
+}
+
+.lm-portal .pcard .go {
+    margin-top: 18px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--green-bright);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lm-portal .pcard .go:hover {
+    color: #fff;
+}
+
+/* FLIP CARDS */
+.lm-portal .flips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.lm-portal .flip {
+    perspective: 1200px;
+    height: 196px;
+    cursor: pointer;
+    outline: none;
+}
+
+.lm-portal .flip-in {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .55s cubic-bezier(.4, .15, .2, 1);
+    transform-style: preserve-3d;
+}
+
+.lm-portal .flip:hover .flip-in,
+.lm-portal .flip:focus-visible .flip-in,
+.lm-portal .flip.flipped .flip-in {
+    transform: rotateY(180deg);
+}
+
+.lm-portal .flip-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 16px;
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.lm-portal .flip-front {
+    background: var(--white);
+    border: 1px solid var(--line);
+}
+
+.lm-portal .flip-front .fico {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(33, 122, 0, .10);
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.lm-portal .flip-front .fico svg {
+    width: 20px;
+    height: 20px;
+}
+
+.lm-portal .flip-front h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.lm-portal .flip-front p {
+    font-size: 13.5px;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+.lm-portal .flip-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1.5px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    transition: transform .5s ease, border-color .2s;
+}
+
+.lm-portal .flip-badge svg {
+    width: 13px;
+    height: 13px;
+}
+
+.lm-portal .flip:hover .flip-badge,
+.lm-portal .flip:focus-visible .flip-badge {
+    transform: rotate(-180deg);
+    border-color: var(--green);
+}
+
+.lm-portal .flip-back {
+    background: linear-gradient(150deg, var(--coral), #e0512e);
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.lm-portal .flip-back p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+/* BE PRESENT */
+.lm-portal .g-note {
+    margin-top: 28px;
+    background: var(--teal);
+    color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 32px 34px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    border-left: 5px solid var(--coral);
+    line-height: 0;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.lm-portal .g-note.in {
+    opacity: 1;
+    transform: none;
+}
+
+.lm-portal .g-note .np {
+    flex: none;
+    width: 140px;
+    height: 140px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .28);
+    font-size: 0;
+}
+
+.lm-portal .g-note .np img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 38%;
+    display: block;
+}
+
+.lm-portal .g-note .gtxt {
+    line-height: 1.55;
+}
+
+.lm-portal .g-note h4 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -.01em;
+}
+
+.lm-portal .g-note h4 .swipe {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .42);
+    transition: color .9s ease .25s;
+}
+
+.lm-portal .g-note.in h4 .swipe {
+    color: var(--green-bright);
+}
+
+.lm-portal .g-note p {
+    color: rgba(255, 255, 255, .85);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 720px;
+}
+
+/* AGREEMENTS — staggered reveal + hover */
+.lm-portal .rules {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr;
+    gap: 40px;
+    align-items: center;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 42px 46px;
+    box-shadow: var(--shadow-sm);
+}
+
+.lm-portal .rules .big {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(28px, 3.4vw, 40px);
+    line-height: 1.15;
+    color: var(--teal);
+}
+
+.lm-portal .rules ul {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+}
+
+.lm-portal .rules li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.45;
+    color: var(--ink);
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity .5s ease, transform .5s ease, color .2s;
+}
+
+.lm-portal .rules.in li {
+    opacity: 1;
+    transform: none;
+}
+
+.lm-portal .rules.in li:nth-child(1) {
+    transition-delay: .05s, .05s, 0s;
+}
+
+.lm-portal .rules.in li:nth-child(2) {
+    transition-delay: .17s, .17s, 0s;
+}
+
+.lm-portal .rules.in li:nth-child(3) {
+    transition-delay: .29s, .29s, 0s;
+}
+
+.lm-portal .rules.in li:nth-child(4) {
+    transition-delay: .41s, .41s, 0s;
+}
+
+.lm-portal .rules.in li:nth-child(5) {
+    transition-delay: .53s, .53s, 0s;
+}
+
+.lm-portal .rules li svg {
+    width: 23px;
+    height: 23px;
+    color: var(--green-bright);
+    flex: none;
+    margin-top: 2px;
+    stroke-width: 2.6;
+    transition: transform .2s;
+}
+
+.lm-portal .rules li .gd {
+    color: var(--green-bright);
+    font-weight: 800;
+}
+
+.lm-portal .rules li:hover {
+    color: var(--green);
+}
+
+.lm-portal .rules li:hover svg {
+    transform: scale(1.18);
+}
+
+/* FAQ — sticky title */
+.lm-portal .faq {
+    display: grid;
+    grid-template-columns: .7fr 1.3fr;
+    gap: 44px;
+    align-items: start;
+}
+
+.lm-portal .faq .huge {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(40px, 6vw, 74px);
+    line-height: .95;
+    color: var(--teal);
+    position: sticky;
+    top: 96px;
+}
+
+.lm-portal .faq .huge span {
+    color: var(--green-bright);
+}
+
+.lm-portal .acc {
+    border-top: 1px solid var(--line);
+}
+
+.lm-portal .acc details {
+    border-bottom: 1px solid var(--line);
+}
+
+.lm-portal .acc summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 22px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20.5px;
+    font-weight: 600;
+    color: var(--green-bright);
+    transition: color .14s;
+}
+
+.lm-portal .acc summary:hover {
+    color: var(--green);
+}
+
+.lm-portal .acc summary::-webkit-details-marker {
+    display: none;
+}
+
+.lm-portal .acc summary .chev {
+    width: 22px;
+    height: 22px;
+    flex: none;
+    color: var(--green);
+    transition: transform .25s;
+    stroke-width: 2.4;
+}
+
+.lm-portal .acc details[open] summary .chev {
+    transform: rotate(90deg);
+}
+
+.lm-portal .acc .body {
+    padding: 0 4px 22px;
+    color: var(--gray);
+    font-size: 15px;
+    line-height: 1.65;
+    max-width: 640px;
+}
+
+/* LMF logo band */
+.lm-portal .lmf-band {
+    background: var(--almond);
+    border-top: 1px solid var(--line);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.lm-portal .lmf-band img {
+    height: 64px;
+    width: auto;
+    opacity: .92;
+}
+
+/* CONTACT */
+.lm-portal .contact {
+    background: var(--teal);
+    color: #fff;
+}
+
+.lm-portal .contact .wrap {
+    padding: 64px 40px;
+}
+
+.lm-portal .contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.lm-portal .contact h2 {
+    font-size: clamp(26px, 3vw, 34px);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    margin-bottom: 10px;
+}
+
+.lm-portal .contact h2 .serif-it {
+    font-weight: 300;
+}
+
+.lm-portal .contact p {
+    color: rgba(255, 255, 255, .82);
+    font-size: 16px;
+    max-width: 460px;
+}
+
+.lm-portal .ways {
+    display: grid;
+    gap: 14px;
+}
+
+.lm-portal .cway {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 12px;
+    padding: 16px 18px;
+    width: 100%;
+    text-align: left;
+    font-family: var(--sans);
+}
+
+.lm-portal button.cway {
+    cursor: pointer;
+    transition: background .15s, border-color .15s;
+}
+
+.lm-portal button.cway:hover {
+    background: rgba(255, 255, 255, .11);
+    border-color: rgba(46, 162, 3, .4);
+}
+
+.lm-portal .cway .gi {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(33, 122, 0, .22);
+    color: var(--green-bright);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+}
+
+.lm-portal .cway .lab {
+    font-size: 12px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.lm-portal button.cway .lab {
+    color: var(--green-bright);
+}
+
+.lm-portal .cway .val {
+    font-size: 15.5px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.lm-portal .health {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .82);
+}
+
+.lm-portal .health a {
+    color: var(--green-bright);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.lm-portal footer.foot {
+    background: var(--teal-deep);
+    color: rgba(255, 255, 255, .5);
+}
+
+.lm-portal footer.foot .wrap {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.lm-portal footer.foot a {
+    color: rgba(255, 255, 255, .6);
+}
+
+/* MODALS (shared) */
+.lm-portal .modal-scrim {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 20, 19, .55);
+    z-index: 90;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s;
+}
+
+.lm-portal .modal-scrim.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lm-portal .modal {
+    position: fixed;
+    z-index: 91;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    width: min(600px, 92vw);
+    max-height: 88vh;
+    overflow-y: auto;
+    background: var(--paper);
+    border-radius: 20px;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, .4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s, transform .25s;
+}
+
+.lm-portal .modal.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+}
+
+.lm-portal .modal .mhead {
+    position: sticky;
+    top: 0;
+    background: var(--teal);
+    color: #fff;
+    padding: 24px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    z-index: 2;
+}
+
+.lm-portal .modal .mhead .eyebrow {
+    color: var(--green-bright);
+}
+
+.lm-portal .modal .mhead h3 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    margin-top: 8px;
+}
+
+.lm-portal .modal .mclose {
+    background: rgba(255, 255, 255, .12);
+    border: none;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    flex: none;
+    line-height: 1;
+}
+
+.lm-portal .modal .mbody {
+    padding: 26px 30px 30px;
+}
+
+.lm-portal .modal .mbody h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 20px 0 6px;
+}
+
+.lm-portal .modal .mbody p {
+    font-size: 14.5px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.lm-portal .modal .mbody p.lead {
+    color: var(--ink);
+}
+
+.lm-portal .crisis {
+    margin-top: 24px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--coral);
+    border-radius: 14px;
+    padding: 22px 24px;
+}
+
+.lm-portal .crisis .crisis-h {
+    color: var(--green-bright);
+    margin-bottom: 10px;
+}
+
+.lm-portal .crisis ul {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.lm-portal .crisis li .rn {
+    font-weight: 700;
+    color: var(--teal);
+    font-size: 15px;
+}
+
+.lm-portal .crisis li .rd {
+    color: var(--gray);
+    font-size: 13.5px;
+    margin-top: 2px;
+}
+
+.lm-portal .crisis .emg {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--coral-ink);
+    font-weight: 600;
+}
+
+.lm-portal .mclosepar {
+    margin-top: 24px;
+    text-align: center;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--teal);
+}
+
+/* feedback modal form */
+.lm-portal .fbform textarea {
+    width: 100%;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 13px 15px;
+    font-family: var(--sans);
+    font-size: 14.5px;
+    color: var(--ink);
+    resize: vertical;
+    min-height: 120px;
+    margin-top: 6px;
+}
+
+.lm-portal .fbform textarea::placeholder {
+    color: #9aa3a2;
+}
+
+.lm-portal .fbform button {
+    margin-top: 14px;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 26px;
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    cursor: pointer;
+}
+
+.lm-portal .fbform button:hover {
+    background: var(--green-bright);
+}
+
+@media (max-width:1000px) {
+    .lm-portal .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        padding: 52px 0 60px;
+    }
+
+    .lm-portal .pcards {
+        grid-template-columns: 1fr;
+    }
+
+    .lm-portal .flips {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lm-portal .rules {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding: 34px;
+    }
+
+    .lm-portal .faq {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .lm-portal .faq .huge {
+        position: static;
+    }
+
+    .lm-portal .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .lm-portal .nav-links {
+        display: none;
+    }
+
+    .lm-portal .g-note .np {
+        display: none;
+    }
+
+}
+
+@media (max-width:600px) {
+    .lm-portal .wrap {
+        padding: 0 22px;
+    }
+
+    .lm-portal .flips {
+        grid-template-columns: 1fr;
+    }
+
+    .lm-portal section.block {
+        padding: 52px 0;
+    }
+
+    .lm-portal .progtabs .row {
+        gap: 36px;
+    }
+
+    .lm-portal .progtabs button.active::after {
+        width: 150px;
+    }
+
+    .lm-portal footer.foot .wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+/* Respect operating-system motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .lm-portal *,
+    .lm-portal *::before,
+    .lm-portal *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
