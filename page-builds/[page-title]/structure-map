@@ -1,0 +1,24 @@
+Section Site Map
+
+1.Header Navigation
+  Block #: 1
+  Background: #ffffff
+  Class Name: lm-portal header-nav
+  HTML Class Name: lm-portal header-nav-wrap
+
+==================================================
+
+2. Tabbed Navigation
+  Block #: 2
+  Background: #xxxxxx
+  Class Name: lm-portal tabbed-nav
+  HTML Class Name: lm-portal tabbed-nav-wrap
+
+
+==================================================
+
+3.Hero
+  Block #: 5
+  Background: #xxxxxx
+  Class Name: lm-portal hero
+  HTML Class Name: lm-portal hero-wrap
