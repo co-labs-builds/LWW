@@ -1,0 +1,360 @@
+/* =========================================================
+   MEMBER PORTAL LOGIN — MASTER PAGE CSS
+   Paste this ONE file into the Ontraport page-level custom CSS.
+   It is self-sufficient (design system + foundation + all
+   section CSS). Do not also paste the individual section CSS
+   files. Repository is the source of truth — mirror any
+   Ontraport edits back into the section files and this file.
+
+   ORDER
+     1. Fonts
+     2. Design tokens
+     3. Foundation (reset + split-flex layout)
+     4. Section 01 — Stage
+     5. Section 02 — Panel
+     6. Shared responsive notes (per-section media queries live
+        with their section below)
+   ========================================================= */
+
+/* ============================================================
+   1. FONTS
+   ============================================================ */
+/* Body font "objektiv-mk1" is loaded via the Typekit <link> in
+   the page <head> (https://use.typekit.net/gwi7lul.css). See
+   00-Assets-Needed.md for the self-hosting alternative. */
+@font-face {
+  font-family: "Tiempos Headline";
+  /* ASSET: replace with Ontraport URL for tiempos-headline-light-italic.woff2 */
+  src: url("REPLACE_WITH_ONTRAPORT_URL/tiempos-headline-light-italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ============================================================
+   2. DESIGN TOKENS
+   ============================================================ */
+:root {
+  --lm-primary: #0d2d31;       /* Teal        — Block 5 */
+  --lm-primary-deep: #0a2226;  /* Deep Teal   — Block 6 */
+  --lm-green: #217a00;
+  --lm-green-bright: #2ea203;
+  --lm-almond: #efede7;        /* Almond      — Block 4 */
+  --lm-gray: #757171;
+  --lm-muted: #8ba7a4;
+  --lm-coral: #f06449;
+}
+
+/* ============================================================
+   3. FOUNDATION — reset + split-flex layout
+   Scoped under .lm-login-wrap so nothing leaks into other
+   Ontraport blocks. Body background/height cannot be relied on
+   inside Ontraport, so the wrapper owns the full-height frame.
+   ============================================================ */
+.lm-login-wrap *,
+.lm-login-wrap *::before,
+.lm-login-wrap *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lm-login-wrap {
+  font-family: "objektiv-mk1", "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* .lm-login__inner is the source ".portal" split container */
+.lm-login-wrap .lm-login__inner {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--lm-primary-deep);
+}
+
+@media (max-width: 900px) {
+  .lm-login-wrap .lm-login__inner {
+    flex-direction: column;
+  }
+}
+
+/* ============================================================
+   4. SECTION 01 — STAGE (branded left column)
+   ============================================================ */
+.lm-login-wrap .lm-login__stage {
+  position: relative;
+  flex: 1.35 1 0;
+  min-width: 0;
+  /* ASSET: replace with Ontraport URL for member-portal-stage-bg.jpg */
+  background: url("REPLACE_WITH_ONTRAPORT_URL/member-portal-stage-bg.jpg") center 42% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 44px 52px 56px;
+}
+
+.lm-login-wrap .lm-login__stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 18% 90%, rgba(33, 122, 0, .18), transparent 60%),
+    linear-gradient(180deg,
+      rgba(10, 34, 38, .66) 0%,
+      rgba(10, 34, 38, .58) 7%,
+      rgba(10, 34, 38, .22) 18%,
+      rgba(10, 34, 38, .08) 32%,
+      rgba(10, 34, 38, .10) 60%,
+      rgba(10, 34, 38, .30) 80%,
+      rgba(10, 34, 38, .90) 100%);
+  z-index: 1;
+}
+
+.lm-login-wrap .lm-login__stage > * {
+  position: relative;
+  z-index: 2;
+}
+
+.lm-login-wrap .lm-login__brand-logo {
+  height: 34px;
+  width: auto;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  display: block;
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .35));
+}
+
+.lm-login-wrap .lm-login__stage-copy {
+  max-width: 620px;
+}
+
+.lm-login-wrap .lm-login__eyebrow {
+  font-family: "Tiempos Headline", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 29px);
+  color: rgba(255, 255, 255, .92);
+  margin-bottom: 6px;
+  letter-spacing: .01em;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, .35);
+}
+
+.lm-login-wrap .lm-login__title {
+  font-family: "objektiv-mk1", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.015em;
+  line-height: .9;
+  font-size: clamp(46px, 6.4vw, 96px);
+  color: #fff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, .35);
+}
+
+.lm-login-wrap .lm-login__rule {
+  width: 54px;
+  height: 3px;
+  background: var(--lm-green-bright);
+  margin-top: 22px;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .lm-login-wrap .lm-login__stage {
+    flex: none;
+    min-height: 44vh;
+    padding: 30px 30px 38px;
+  }
+  .lm-login-wrap .lm-login__title {
+    font-size: clamp(40px, 10vw, 64px);
+  }
+}
+
+@media (max-width: 420px) {
+  .lm-login-wrap .lm-login__stage {
+    padding: 24px 22px 30px;
+  }
+}
+
+/* ============================================================
+   5. SECTION 02 — PANEL (login form, right column)
+   ============================================================ */
+.lm-login-wrap .lm-login__panel {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 340px;
+  max-width: 520px;
+  background: var(--lm-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 56px;
+}
+
+.lm-login-wrap .lm-login__panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(90% 55% at 82% 8%, rgba(33, 122, 0, .16), transparent 60%);
+  pointer-events: none;
+}
+
+.lm-login-wrap .lm-login__form-wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.lm-login-wrap .lm-login__welcome {
+  font-family: "objektiv-mk1", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -.01em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.lm-login-wrap .lm-login__dot {
+  color: var(--lm-green-bright);
+}
+
+.lm-login-wrap .lm-login__subhead {
+  color: var(--lm-muted);
+  font-size: 15.5px;
+  line-height: 1.5;
+  margin-bottom: 38px;
+}
+
+.lm-login-wrap .lm-login__field {
+  margin-bottom: 20px;
+}
+
+.lm-login-wrap .lm-login__field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--lm-muted);
+  margin-bottom: 9px;
+}
+
+.lm-login-wrap .lm-login__field input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--lm-primary);
+  padding: 15px 16px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.lm-login-wrap .lm-login__field input::placeholder {
+  color: #9aa3a2;
+}
+
+.lm-login-wrap .lm-login__field input:focus {
+  outline: none;
+  border-color: var(--lm-green-bright);
+  box-shadow: 0 0 0 3px rgba(46, 162, 3, .25);
+}
+
+.lm-login-wrap .lm-login__btn {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--lm-green);
+  color: #fff;
+  padding: 16px;
+  margin-top: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  transition: background .15s ease, transform .05s ease;
+}
+
+.lm-login-wrap .lm-login__btn:hover {
+  background: var(--lm-green-bright);
+}
+
+.lm-login-wrap .lm-login__btn:active {
+  transform: translateY(1px);
+}
+
+.lm-login-wrap .lm-login__help {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.lm-login-wrap .lm-login__help p {
+  color: var(--lm-muted);
+  font-size: 13.5px;
+  margin-bottom: 10px;
+}
+
+.lm-login-wrap .lm-login__help a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--lm-green-bright);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.lm-login-wrap .lm-login__help a:hover {
+  color: #fff;
+}
+
+.lm-login-wrap .lm-login__help a svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+}
+
+.lm-login-wrap .lm-login__foot {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  padding-top: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, .38);
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+.lm-login-wrap .lm-login__foot span {
+  color: rgba(255, 255, 255, .55);
+}
+
+@media (max-width: 900px) {
+  .lm-login-wrap .lm-login__panel {
+    flex: none;
+    max-width: none;
+    width: 100%;
+    padding: 48px 26px 40px;
+    min-width: 0;
+  }
+  .lm-login-wrap .lm-login__form-wrap {
+    max-width: 420px;
+  }
+  .lm-login-wrap .lm-login__foot {
+    padding-top: 34px;
+  }
+}
+
+@media (max-width: 420px) {
+  .lm-login-wrap .lm-login__welcome {
+    font-size: 34px;
+  }
+}
