@@ -1450,6 +1450,7 @@
   .lm-hero .lm-event-card {
     max-width: 620px;
   }
+}
 
 
 
@@ -1862,7 +1863,8 @@
   }
  
   .lm-prepare .lm-prepare-card__image {
-  height: 18px !important;
-  overflow: hidden !important;
+    height: 186px !important;
+    overflow: hidden !important;
+  }
 }
 </style>
