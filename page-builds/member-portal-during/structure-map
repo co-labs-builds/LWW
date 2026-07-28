@@ -1,0 +1,133 @@
+NOTES
+- Page root: every section AND every modal element carries the class `lm-mpd`
+  (the page-root scope) in addition to its own wrapper class. The master.css is
+  scoped under `.lm-mpd`, so this class must be present on each Custom HTML
+  element for styles to apply.
+- Tabs: sections 3–8 are the "Current Program" tab; sections 9–11 are the
+  "All Programs" tab. Their root element carries `data-tabgroup="current"` or
+  `data-tabgroup="all"`. The program-tabs JS (section 2) shows/hides by that
+  attribute. Sections 1–2 and 12–14 are always visible.
+- Modals/popups live in each section's `popups/` folder and are pasted as
+  additional Custom HTML elements (page-level is fine). Triggers stay in the
+  owning section; each popup has its own JS.
+
+------------------------------------------------------
+
+1. Section Name: Navigation (top bar + drawer)
+Block #: 1
+Background Color: #ffffff (White)
+Class Name: lm-portal lm-mpd-nav
+HTML Element Class Name: lm-mpd lm-mpd-nav-wrap
+
+------------------------------------------------------
+
+2. Section Name: Program Tabs
+Block #: 2
+Background Color: #41454a (Tab Grey)
+Class Name: lm-portal lm-mpd-tabs
+HTML Element Class Name: lm-mpd lm-mpd-tabs-wrap
+
+------------------------------------------------------
+
+3. Section Name: Hero (Today)
+Block #: 4
+Background Color: #efede7 (Almond)
+Class Name: lm-portal lm-mpd-hero
+HTML Element Class Name: lm-mpd lm-mpd-hero-wrap
+
+------------------------------------------------------
+
+4. Section Name: This Weekend (action cards)
+Block #: 3
+Background Color: #f7f5ef (Paper)
+Class Name: lm-portal lm-mpd-this-weekend
+HTML Element Class Name: lm-mpd lm-mpd-this-weekend-wrap
+
+------------------------------------------------------
+
+5. Section Name: Assignments
+Block #: 4
+Background Color: #efede7 (Almond)
+Class Name: lm-portal lm-mpd-assignments
+HTML Element Class Name: lm-mpd lm-mpd-assignments-wrap
+
+------------------------------------------------------
+
+6. Section Name: Graduation
+Block #: 3
+Background Color: #f7f5ef (Paper)
+Class Name: lm-portal lm-mpd-graduation
+HTML Element Class Name: lm-mpd lm-mpd-graduation-wrap
+
+------------------------------------------------------
+
+7. Section Name: Agreements
+Block #: 4
+Background Color: #efede7 (Almond)
+Class Name: lm-portal lm-mpd-agreements
+HTML Element Class Name: lm-mpd lm-mpd-agreements-wrap
+
+------------------------------------------------------
+
+8. Section Name: FAQ
+Block #: 3
+Background Color: #f7f5ef (Paper)
+Class Name: lm-portal lm-mpd-faq
+HTML Element Class Name: lm-mpd lm-mpd-faq-wrap
+
+------------------------------------------------------
+
+9. Section Name: Programs Header
+Block #: 3
+Background Color: #f7f5ef (Paper)
+Class Name: lm-portal lm-mpd-programs-header
+HTML Element Class Name: lm-mpd lm-mpd-programs-header-wrap
+
+------------------------------------------------------
+
+10. Section Name: Programs Grid
+Block #: 3
+Background Color: #f7f5ef (Paper)
+Class Name: lm-portal lm-mpd-programs
+HTML Element Class Name: lm-mpd lm-mpd-programs-wrap
+
+------------------------------------------------------
+
+11. Section Name: Curriculum CTA
+Block #: 5
+Background Color: #0d2d31 (Teal, with green radial glow)
+Class Name: lm-portal lm-mpd-curriculum
+HTML Element Class Name: lm-mpd lm-mpd-curriculum-wrap
+
+------------------------------------------------------
+
+12. Section Name: Forum Logo Band
+Block #: 4
+Background Color: #efede7 (Almond)
+Class Name: lm-portal lm-mpd-lmf-band
+HTML Element Class Name: lm-mpd lm-mpd-lmf-band-wrap
+
+------------------------------------------------------
+
+13. Section Name: Contact
+Block #: 5
+Background Color: #0d2d31 (Teal)
+Class Name: lm-portal lm-mpd-contact
+HTML Element Class Name: lm-mpd lm-mpd-contact-wrap
+
+------------------------------------------------------
+
+14. Section Name: Footer
+Block #: 6
+Background Color: #0a2226 (Deep Teal)
+Class Name: lm-portal lm-mpd-footer
+HTML Element Class Name: lm-mpd lm-mpd-footer-wrap
+
+------------------------------------------------------
+
+POPUPS / MODALS (pasted as additional Custom HTML elements; each carries lm-mpd)
+- Nav → My Account modal            sections/1-nav/popups/1-my-account/
+- Programs Grid → Program detail     sections/10-programs-grid/popups/1-program-detail/
+- Contact → Health Resources modal   sections/13-contact/popups/1-health-resources/
+- Contact → Feedback modal           sections/13-contact/popups/2-feedback/
+- Contact → Support modal            sections/13-contact/popups/3-support/  (no active trigger in this prototype)

@@ -1,0 +1,17 @@
+/* 8-faq */
+.lm-mpd .faq {display:grid;grid-template-columns:.7fr 1.3fr;gap:44px;align-items:start;}
+.lm-mpd .faq .huge {font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(40px,6vw,74px);line-height:.95;color:var(--teal);position:sticky;top:96px;}
+.lm-mpd .faq .huge span {color:var(--green-bright);}
+.lm-mpd .acc {border-top:1px solid var(--line);}
+.lm-mpd .acc details {border-bottom:1px solid var(--line);}
+.lm-mpd .acc summary {list-style:none;cursor:pointer;padding:22px 4px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:20.5px;font-weight:600;color:var(--ink);transition:color .14s;}
+.lm-mpd .acc summary:hover {color:var(--green-bright);}
+.lm-mpd .acc summary::-webkit-details-marker {display:none;}
+.lm-mpd .acc summary .chev {width:22px;height:22px;flex:none;color:var(--green);transition:transform .25s;stroke-width:2.4;}
+.lm-mpd .acc details[open] summary .chev {transform:rotate(90deg);}
+.lm-mpd .acc .body {padding:0 4px 22px;color:var(--gray);font-size:15px;line-height:1.65;max-width:640px;}
+.lm-mpd .acc details[open] summary {color:var(--green-bright);}
+@media (max-width:1000px) {
+  .lm-mpd .faq {grid-template-columns:1fr;gap:24px;}
+  .lm-mpd .faq .huge {position:static;}
+}

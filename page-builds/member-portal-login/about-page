@@ -1,0 +1,10 @@
+Page Name: Member Portal Login
+Slug: member-portal-login
+
+What it is: A full-height, two-column login screen for the Landmark Member Portal. The left column is a branded photographic panel ("Welcome to your / Member Portal"); the right column holds the sign-in form (email, password, Log In), a password-help link, and a support footer.
+
+Who it is visible to: Publicly reachable at the portal URL; it is the sign-in gateway to the members-only Landmark Portal area.
+
+When someone accesses it: When a returning member visits the portal to sign in, or is sent to log in before reaching gated member content.
+
+Purpose: Let an existing member authenticate and continue into the Member Portal, with a secondary path to password help.

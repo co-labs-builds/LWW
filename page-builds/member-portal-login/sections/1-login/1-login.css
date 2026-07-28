@@ -1,0 +1,271 @@
+/* =========================================================
+   SECTION 1 — LOGIN (full-height two-column split)
+   Scoped under .lm-portal-login-wrap. Fonts/tokens/foundations
+   come from design-system.css (and master.css). Body height is
+   not reliable inside Ontraport, so the inner wrapper owns the
+   full-height frame.
+   ========================================================= */
+
+.lm-portal-login-wrap .lm-portal-login__inner {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--lm-primary-deep);
+}
+
+/* ---- Stage (left column) ---- */
+.lm-portal-login-wrap .lm-portal-login__stage {
+  position: relative;
+  flex: 1.35 1 0;
+  min-width: 0;
+  background: url("TBD_ONTRAPORT_ASSET_URL/member-portal-login-stage-background.jpg") center 42% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 44px 52px 56px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 18% 90%, rgba(33, 122, 0, .18), transparent 60%),
+    linear-gradient(180deg,
+      rgba(10, 34, 38, .66) 0%,
+      rgba(10, 34, 38, .58) 7%,
+      rgba(10, 34, 38, .22) 18%,
+      rgba(10, 34, 38, .08) 32%,
+      rgba(10, 34, 38, .10) 60%,
+      rgba(10, 34, 38, .30) 80%,
+      rgba(10, 34, 38, .90) 100%);
+  z-index: 1;
+}
+
+.lm-portal-login-wrap .lm-portal-login__stage > * {
+  position: relative;
+  z-index: 2;
+}
+
+.lm-portal-login-wrap .lm-portal-login__brand-logo {
+  height: 34px;
+  width: auto;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  display: block;
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .35));
+}
+
+.lm-portal-login-wrap .lm-portal-login__stage-copy {
+  max-width: 620px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__eyebrow {
+  font-family: var(--lm-font-serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 29px);
+  color: rgba(255, 255, 255, .92);
+  margin-bottom: 6px;
+  letter-spacing: .01em;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, .35);
+}
+
+.lm-portal-login-wrap .lm-portal-login__title {
+  font-family: var(--lm-font-sans);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.015em;
+  line-height: .9;
+  font-size: clamp(46px, 6.4vw, 96px);
+  color: #fff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, .35);
+}
+
+.lm-portal-login-wrap .lm-portal-login__rule {
+  width: 54px;
+  height: 3px;
+  background: var(--lm-green-bright);
+  margin-top: 22px;
+  border-radius: 2px;
+}
+
+/* ---- Panel (right column) ---- */
+.lm-portal-login-wrap .lm-portal-login__panel {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 340px;
+  max-width: 520px;
+  background: var(--lm-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 56px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(90% 55% at 82% 8%, rgba(33, 122, 0, .16), transparent 60%);
+  pointer-events: none;
+}
+
+.lm-portal-login-wrap .lm-portal-login__form-wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.lm-portal-login-wrap .lm-portal-login__welcome {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -.01em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__dot {
+  color: var(--lm-green-bright);
+}
+
+.lm-portal-login-wrap .lm-portal-login__subhead {
+  color: var(--lm-muted);
+  font-size: 15.5px;
+  line-height: 1.5;
+  margin-bottom: 38px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field {
+  margin-bottom: 20px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--lm-muted);
+  margin-bottom: 9px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: #fff;
+  color: var(--lm-primary);
+  padding: 15px 16px;
+  font-size: 15px;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field input::placeholder {
+  color: #9aa3a2;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field input:focus {
+  border-color: var(--lm-green-bright);
+}
+
+.lm-portal-login-wrap .lm-portal-login__btn {
+  width: 100%;
+  background: var(--lm-green);
+  color: #fff;
+  padding: 16px;
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: .14em;
+}
+
+.lm-portal-login-wrap .lm-portal-login__btn:hover {
+  background: var(--lm-green-bright);
+}
+
+.lm-portal-login-wrap .lm-portal-login__help {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.lm-portal-login-wrap .lm-portal-login__help p {
+  color: var(--lm-muted);
+  font-size: 13.5px;
+  margin-bottom: 10px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__help a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--lm-green-bright);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.lm-portal-login-wrap .lm-portal-login__help a:hover {
+  color: #fff;
+}
+
+.lm-portal-login-wrap .lm-portal-login__help a svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+}
+
+.lm-portal-login-wrap .lm-portal-login__foot {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  padding-top: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, .38);
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+.lm-portal-login-wrap .lm-portal-login__foot span {
+  color: rgba(255, 255, 255, .55);
+}
+
+/* ---- Responsive: stack the split below 900px ---- */
+@media (max-width: 900px) {
+  .lm-portal-login-wrap .lm-portal-login__inner {
+    flex-direction: column;
+  }
+  .lm-portal-login-wrap .lm-portal-login__stage {
+    flex: none;
+    min-height: 44vh;
+    padding: 30px 30px 38px;
+  }
+  .lm-portal-login-wrap .lm-portal-login__title {
+    font-size: clamp(40px, 10vw, 64px);
+  }
+  .lm-portal-login-wrap .lm-portal-login__panel {
+    flex: none;
+    max-width: none;
+    width: 100%;
+    padding: 48px 26px 40px;
+    min-width: 0;
+  }
+  .lm-portal-login-wrap .lm-portal-login__form-wrap {
+    max-width: 420px;
+  }
+  .lm-portal-login-wrap .lm-portal-login__foot {
+    padding-top: 34px;
+  }
+}
+
+@media (max-width: 420px) {
+  .lm-portal-login-wrap .lm-portal-login__stage {
+    padding: 24px 22px 30px;
+  }
+  .lm-portal-login-wrap .lm-portal-login__welcome {
+    font-size: 34px;
+  }
+}

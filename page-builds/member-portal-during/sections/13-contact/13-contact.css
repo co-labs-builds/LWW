@@ -1,0 +1,19 @@
+/* 13-contact */
+.lm-mpd .contact {background:var(--teal);color:#fff;}
+.lm-mpd .contact .wrap {padding:64px 40px;}
+.lm-mpd .contact-grid {display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:start;}
+.lm-mpd .contact h2 {font-size:clamp(26px,3vw,34px);font-weight:800;letter-spacing:-.02em;margin-bottom:10px;}
+.lm-mpd .contact h2 .serif-it {font-weight:300;}
+.lm-mpd .contact p {color:rgba(255,255,255,.82);font-size:16px;max-width:460px;}
+.lm-mpd .ways {display:grid;gap:14px;}
+.lm-mpd .cway {display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px;width:100%;text-align:left;font-family:var(--sans);}
+.lm-mpd button.cway {cursor:pointer;transition:background .15s,border-color .15s;}
+.lm-mpd button.cway:hover {background:rgba(255,255,255,.11);border-color:rgba(46,162,3,.4);}
+.lm-mpd .cway .gi {width:40px;height:40px;border-radius:10px;background:rgba(33,122,0,.22);color:var(--green-bright);display:flex;align-items:center;justify-content:center;flex:none;}
+.lm-mpd .cway .lab {font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.lm-mpd .cway .val {font-size:15.5px;font-weight:600;color:#fff;}
+.lm-mpd .health {margin-top:22px;display:flex;align-items:center;gap:12px;font-size:14px;color:rgba(255,255,255,.82);}
+.lm-mpd .health a {color:var(--green-bright);font-weight:700;cursor:pointer;}
+@media (max-width:1000px) {
+  .lm-mpd .contact-grid {grid-template-columns:1fr;gap:30px;}
+}

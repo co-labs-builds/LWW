@@ -1,0 +1,7 @@
+/* 1-health-resources */
+.lm-mpd .crisis {margin-top:24px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--coral);border-radius:14px;padding:22px 24px;}
+.lm-mpd .crisis .crisis-h {color:var(--green-bright);margin-bottom:10px;}
+.lm-mpd .crisis ul {list-style:none;display:grid;gap:14px;margin-top:14px;}
+.lm-mpd .crisis li .rn {font-weight:700;color:var(--teal);font-size:15px;}
+.lm-mpd .crisis li .rd {color:var(--gray);font-size:13.5px;margin-top:2px;}
+.lm-mpd .crisis .emg {margin-top:16px;font-size:13px;color:var(--coral-ink);font-weight:600;}

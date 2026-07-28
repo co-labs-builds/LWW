@@ -1,0 +1,10 @@
+/* 2-program-tabs */
+.lm-mpd .progtabs {background:var(--tabbar);position:sticky;top:78px;z-index:49;}
+.lm-mpd .progtabs .row {display:flex;justify-content:center;gap:66px;height:48px;align-items:center;}
+.lm-mpd .progtabs button {background:none;border:none;cursor:pointer;color:rgba(255,255,255,.55);font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;height:100%;position:relative;}
+.lm-mpd .progtabs button.active {color:#fff;}
+.lm-mpd .progtabs button.active::after {content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:0;width:210px;height:3px;background:var(--green-bright);border-radius:2px;}
+@media (max-width:600px) {
+  .lm-mpd .progtabs .row {gap:30px;}
+  .lm-mpd .progtabs button.active::after {width:140px;}
+}

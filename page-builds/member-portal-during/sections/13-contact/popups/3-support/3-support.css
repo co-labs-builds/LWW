@@ -1,0 +1,14 @@
+/* 3-support */
+.lm-mpd .mform {margin-top:18px;}
+.lm-mpd .mform label {display:block;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);margin:14px 0 6px;}
+.lm-mpd .mform textarea, .lm-mpd .mform input {width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px 15px;font-family:var(--sans);font-size:14.5px;color:var(--ink);}
+.lm-mpd .mform textarea {resize:vertical;min-height:110px;}
+.lm-mpd .mform textarea::placeholder, .lm-mpd .mform input::placeholder {color:#9aa3a2;}
+.lm-mpd .mform button {margin-top:16px;background:var(--green-bright);color:#fff;border:none;border-radius:5px;padding:14px 26px;font-family:var(--sans);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;}
+.lm-mpd .mform button:hover {background:var(--green);}
+.lm-mpd .mform .fine {font-size:12.5px;color:var(--gray);margin-top:12px;}
+.lm-mpd .mform .checkrow {display:flex;gap:22px;margin-top:8px;flex-wrap:wrap;}
+.lm-mpd .mform .checkrow label {display:flex;align-items:center;gap:8px;font-size:14px;font-weight:400;letter-spacing:0;text-transform:none;color:var(--ink);cursor:pointer;margin:0;}
+.lm-mpd .mform .checkrow input {width:17px;height:17px;accent-color:var(--green);}
+.lm-mpd .mform .callus {display:flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 15px;margin-bottom:14px;font-size:14px;color:var(--ink);}
+.lm-mpd .mform .callus a {color:var(--green);font-weight:700;}

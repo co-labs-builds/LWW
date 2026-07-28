@@ -1,0 +1,7 @@
+/* 14-footer */
+.lm-mpd footer.foot {background:var(--teal-deep);color:rgba(255,255,255,.5);}
+.lm-mpd footer.foot .wrap {padding:30px 40px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:13px;}
+.lm-mpd footer.foot a {color:rgba(255,255,255,.6);}
+@media (max-width:600px) {
+  .lm-mpd footer.foot .wrap {flex-direction:column;text-align:center;}
+}
