@@ -1,0 +1,7 @@
+/* 11-curriculum */
+.lm-mpd .curric {background:radial-gradient(90% 140% at 50% -30%, rgba(46,162,3,.28), transparent 60%),var(--teal);color:#fff;padding:70px 0;text-align:center;}
+.lm-mpd .curric h2 {font-size:clamp(26px,3vw,36px);font-weight:800;letter-spacing:-.01em;}
+.lm-mpd .curric h2 .serif-it {color:var(--green-bright);}
+.lm-mpd .curric p {color:rgba(255,255,255,.75);margin:14px auto 28px;max-width:520px;font-size:15.5px;line-height:1.65;}
+.lm-mpd .cbtn {display:inline-flex;align-items:center;gap:11px;background:#2dae0e;color:#fff;border-radius:5px;padding:16px 26px 12px;font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;transition:background .15s;}
+.lm-mpd .cbtn:hover {background:var(--green);}

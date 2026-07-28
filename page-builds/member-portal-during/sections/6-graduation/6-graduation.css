@@ -1,0 +1,52 @@
+/* 6-graduation */
+.lm-mpd .gradfeat {background:#fff;border:1px solid var(--line);border-radius:20px;padding:0;display:grid;grid-template-columns:430px 1fr;gap:0;align-items:stretch;box-shadow:var(--shadow-sm);overflow:hidden;}
+.lm-mpd .gradfeat>div:last-child {padding:32px 36px;}
+.lm-mpd .gradfeat .gph {width:100%;height:100%;min-height:320px;overflow:hidden;}
+.lm-mpd .gradfeat .gph img {width:100%;height:100%;object-fit:cover;object-position:50% 72%;display:block;}
+.lm-mpd .gradfeat .geye {font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--green-bright);}
+.lm-mpd .gradfeat h3 {font-size:clamp(20px,2.3vw,26px);font-weight:800;letter-spacing:-.02em;margin:9px 0 8px;color:var(--ink);line-height:1.3;}
+.lm-mpd .gradfeat h3 .serif-it {font-weight:300;color:var(--green);}
+.lm-mpd .gradfeat p {font-size:15px;color:var(--gray);line-height:1.6;margin-bottom:12px;}
+.lm-mpd .gradfeat .gq {font-family:var(--serif);font-style:italic;font-weight:300;font-size:24px;color:var(--green);margin:0;}
+.lm-mpd .ginvite {display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;margin-top:14px;}
+.lm-mpd .gmeta {font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;}
+.lm-mpd .gbtn {flex:none;}
+.lm-mpd .gradfeat .gbtn {background:#2dae0e;color:#fff;border:none;border-radius:5px;padding:15px 22px 11px;font-family:var(--sans);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;display:inline-flex;align-items:center;gap:9px;}
+.lm-mpd .gradfeat .gbtn:hover {background:var(--green);}
+.lm-mpd .gradrow {display:grid;grid-template-columns:1fr;gap:22px;margin-top:22px;align-items:stretch;}
+.lm-mpd .finalsess {background:var(--almond);border-radius:16px;padding:28px 32px;display:flex;flex-direction:column;justify-content:center;}
+.lm-mpd .finalsess .fe {display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gray);}
+.lm-mpd .finalsess .fe .dot {width:9px;height:9px;border-radius:50%;background:var(--green-bright);}
+.lm-mpd .finalsess h3 {font-size:30px;font-weight:800;letter-spacing:-.02em;margin:12px 0 10px;color:var(--ink);}
+.lm-mpd .finalsess h3 .serif-it {font-weight:300;color:var(--green);}
+.lm-mpd .finalsess .fdate {font-size:20px;font-weight:800;color:var(--ink);}
+.lm-mpd .finalsess .fnote {font-size:14.5px;color:var(--gray);margin-top:6px;line-height:1.55;}
+.lm-mpd .plancard {background:var(--teal);color:#fff;border-radius:16px;border-left:6px solid var(--coral);padding:32px 36px;display:flex;gap:30px;align-items:center;justify-content:space-between;}
+.lm-mpd .plancard h3 {font-size:22px;font-weight:800;letter-spacing:-.01em;margin-bottom:10px;}
+.lm-mpd .plancard h3 .serif-it {font-weight:300;color:var(--green-bright);}
+.lm-mpd .plancard p {color:rgba(255,255,255,.85);font-size:14.5px;line-height:1.6;max-width:640px;}
+.lm-mpd .plancard .pbtn {flex:none;background:#2dae0e;color:#fff;border:none;border-radius:5px;padding:15px 22px 11px;font-family:var(--sans);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;white-space:nowrap;}
+.lm-mpd .plancard .pbtn:hover {background:var(--green);}
+.lm-mpd .invitees {background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 34px;box-shadow:var(--shadow-sm);}
+.lm-mpd .invitees .inv-eye {font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--green-bright);}
+.lm-mpd .invitees h3 {font-size:22px;font-weight:800;letter-spacing:-.01em;margin:8px 0 4px;color:var(--ink);}
+.lm-mpd .invitees h3 .serif-it {font-weight:300;color:var(--green);}
+.lm-mpd .invitees .inv-sub {font-size:14px;color:var(--gray);margin-bottom:16px;}
+.lm-mpd .inv-list {border-top:1px solid var(--line);}
+.lm-mpd .inv-row {display:flex;align-items:center;gap:16px;padding:14px 2px;border-bottom:1px solid var(--line);}
+.lm-mpd .inv-name {flex:none;min-width:170px;font-size:15px;font-weight:700;color:var(--ink);}
+.lm-mpd .inv-link {flex:1;font-size:13px;color:var(--gray);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.lm-mpd .inv-copy {flex:none;position:relative;display:inline-flex;align-items:center;gap:7px;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-family:var(--sans);font-size:12px;font-weight:700;color:var(--green);cursor:pointer;transition:border-color .15s,background .15s;}
+.lm-mpd .inv-copy:hover {border-color:var(--green-bright);background:rgba(45,174,14,.06);}
+.lm-mpd .inv-copy svg {width:14px;height:14px;}
+.lm-mpd .inv-copy .tip {position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:11px;font-weight:600;padding:5px 10px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .15s;}
+.lm-mpd .inv-copy:hover .tip {opacity:1;}
+.lm-mpd .inv-copy.copied {border-color:var(--green-bright);color:var(--green-bright);}
+.lm-mpd .inv-more {display:inline-flex;align-items:center;gap:8px;margin-top:18px;border:1.5px solid var(--green);border-radius:8px;padding:10px 16px;font-size:13px;font-weight:700;color:var(--green);cursor:pointer;transition:background .15s,border-color .15s;}
+.lm-mpd .inv-more:hover {background:rgba(45,174,14,.07);}
+.lm-mpd .inv-more svg {width:14px;height:14px;}
+@media (max-width:1000px) {
+  .lm-mpd .gradfeat {grid-template-columns:1fr;gap:0;}
+  .lm-mpd .gradrow {grid-template-columns:1fr;}
+  .lm-mpd .plancard {flex-direction:column;align-items:flex-start;}
+}

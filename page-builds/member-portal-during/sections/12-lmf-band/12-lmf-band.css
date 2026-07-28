@@ -1,0 +1,3 @@
+/* 12-lmf-band */
+.lm-mpd .lmf-band {background:var(--almond);border-top:1px solid var(--line);padding:50px 0;text-align:center;}
+.lm-mpd .lmf-band img {height:70px;width:auto;opacity:.92;}

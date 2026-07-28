@@ -1,0 +1,4 @@
+/* 2-feedback */
+.lm-mpd .fbform textarea {width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px 15px;font-family:var(--sans);font-size:14.5px;color:var(--ink);resize:vertical;min-height:120px;margin-top:6px;}
+.lm-mpd .fbform button {margin-top:14px;background:#2dae0e;color:#fff;border:none;border-radius:5px;padding:14px 22px 10px;font-family:var(--sans);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;}
+.lm-mpd .fbform button:hover {background:var(--green);}

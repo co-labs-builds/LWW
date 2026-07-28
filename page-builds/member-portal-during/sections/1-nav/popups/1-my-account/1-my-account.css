@@ -1,0 +1,18 @@
+/* 1-my-account */
+.lm-mpd .acct-grid {display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;}
+.lm-mpd .acct-grid .full {grid-column:1 / -1;}
+.lm-mpd .acct-lab {display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);margin:0 0 5px;}
+.lm-mpd .acct-in {width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-family:var(--sans);font-size:14.5px;color:var(--ink);}
+.lm-mpd .acct-in:focus {outline:none;border-color:var(--green-bright);}
+.lm-mpd .acct-sec {margin-top:22px;padding-top:18px;border-top:1px solid var(--line);}
+.lm-mpd .acct-sec:first-child {margin-top:0;padding-top:0;border-top:none;}
+.lm-mpd .acct-sec .sec-t {font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--green-bright);margin-bottom:12px;}
+.lm-mpd .acct-card {display:flex;align-items:center;justify-content:space-between;gap:14px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+.lm-mpd .acct-card .cc {font-size:14.5px;font-weight:600;color:var(--ink);}
+.lm-mpd .acct-card .cc span {color:var(--gray);font-weight:400;font-size:13px;display:block;}
+.lm-mpd .acct-link {font-size:13px;font-weight:700;color:var(--green);cursor:pointer;border-bottom:1.5px solid rgba(45,174,14,.35);}
+.lm-mpd .acct-check {display:flex;align-items:center;gap:10px;font-size:14.5px;color:var(--ink);margin-bottom:9px;}
+.lm-mpd .acct-check input {width:17px;height:17px;accent-color:var(--green-bright);}
+.lm-mpd .acct-save {margin-top:22px;background:var(--green-bright);color:#fff;border:none;border-radius:5px;padding:14px 26px;font-family:var(--sans);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;}
+.lm-mpd .acct-save:hover {background:var(--green);}
+.lm-mpd .acct-fine {font-size:12.5px;color:var(--gray);margin-top:14px;}
