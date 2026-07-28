@@ -1,0 +1,415 @@
+/* =========================================================
+   MEMBER PORTAL LOGIN — MASTER CSS
+   One paste-ready stylesheet for the Ontraport page custom
+   code / header area. Order: canonical fonts -> design-system
+   tokens & foundations -> section CSS. Keep in sync with the
+   files under sections/.
+   ========================================================= */
+
+/* ===== 1 + 2. CANONICAL FONTS + DESIGN SYSTEM ===== */
+/* =========================================================
+   LANDMARK — CANONICAL ONTRAPORT-HOSTED FONT SYSTEM
+   Approved shared dependency for every Landmark Site Build.
+   Do not replace these URLs, re-upload the font files, or
+   include them in the page-specific asset URL intake.
+   ========================================================= */
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/ba7ff633d6c04ce990ea8dcd412628be.phpog5fus?Expires=4938729439&Signature=QwdJNIufBp6Ban7cBFYbg5WnIUYhX3YmhJoGG2Wcp2RvojQM1Y196zA23ANoo~LXamoPi7pi2BVvRyf1JIKGV7LMgdY2icTw~TDwqhZh6SoscuGQla43z-9Bj4q7jzhyJk4gYTEGdhFJQO1VYLVLDPfIFScQA8lZemPBovwTBjxtdAVxroKXujW6YEatuk1FNLPkmNPR1R8DljQbsvccTz9F2k~OgFNI3B6S3ozK3dRAQOsYt7Z25MuYkvt54Li9CMeHBBVZStip8W3q56l4XtsWDqmI2ZtE~xyk9AH6LAQYBE8zqz~WgYjDC1whzMvQFkqBHQ6W3T5lM32CwuoZqg__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/ce5b7e54997044a8b8a5001b7929ff4f.phphgrpey?Expires=4938729384&Signature=Uw6VytthceXwol5adfB8zHZJEh9q6KEUGEm0MXcodLDwRWdRbtsd-6BE69XOYtQRk58794AwDDR2c5BJAqAXH5SVcntlyRWqlYMV~x2kHI1qTPARzWAKTAlPPQn7LUNUYhBr0ZFNAd~bXmEtDvUDJ0RaQwDiR0c49Ix0DZ1CH7mgoiKGigwnmEuISJR~eWQHs2aVUeqXYzeGY6EreetDIT98KSri01gCB0j8Ivo61DwVB5cB~O4qYwaJHr5my99Ss8Gaq40EhbDVDPdHcJrJDeey~QBUu2w~qEaUUfBWIr8EkxCMitSt9t5pRvfuxwuvXUYwFAGlj2yG4cqz7lOxEQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/7a3cb7f1f1a7454ab43f02da2e28d747.phpegn3xv?Expires=4938729429&Signature=Qa~bULdTm8~QxJENdTZ3cGaBCo7EZk2lsq5LmxkH~epvxTipEQpBDPn67qUiZNvfMosHipYE8EKyWggdpewgRJzV~SjVwjoSZJNXXP8pQrBy3dp1riEckf4xordmRo7VxOB7GR-UowWAfPbedbLIRh0ivIy~Szp78P0opYczpnxBGMCT9-UjbeVrDbL2IaKPrsmojUbkzNTQQ3yLqZHOX5O8DXKk3fq1iO~ZozSyQ1DPfbU6FHj0TdNOMWDuU7Qqs2o5SoAajRstgEmP6tpapdXN4Y5y8ANYU7KO9iVGOKpHGQfp3SFXWVa-GbCmeRYHuHsR4zUl5-P1~lCOTnEIqA__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/6f6ea8f2d7ce4916b734fd9e0479ca24.php4lzpsi?Expires=4938729354&Signature=ffiCEtrpgE711FvPkv6q1uqVxJdAJj3mCXgXZfQ~OWdd~na~FC53cZlIBSN9-vQR0hFM57nRD4i7YlTnsc4E04r6sh1Fn5jG~42AY4NNJqLOBwzCQEmQ0wLTNXHu2PxsKmdnNN2Za5ALUPbAHxsPMdY6M83Gtz6b5-u5C-5ywtWY4fTuqK-yf4LDzS3ZxGtFKn0pKWTGBvGPjweBP~B5O~1X00tqaQqqkx9zLSJjOVe8lQWgjge93zv-d2rK-TmoO~pgcghyV24dpKBb8PMB5rOQ2~hUS6uorft~exVaKdUs8m1J6vz31X72pWx~QoOl5bbJiskPLq6R8Ye5PwHPZw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/932c448447d04664b092b2a0a877760e.phpfpkzjo?Expires=4938729403&Signature=Sn1pvhyJZsA3vocVNxdqE48LUTDDSUCRdBPiWq9uMAdzuYluE44g6XQC46e~-8hAAEvTXAPrCcfB3262OqtAANFX7g04shsBazrmqSbshIY5UwNwP9p9UqxVe6ka43c4IUI5fLb0o5uDVaG~Gmddaj-PucZAPlqdEmw-MPEX6NS0EAylfvd2N9IoVC9ZlzbrUtUbOQtaJcR4-wdxSfrJU2leRKORq6W5tHiGOYVvc6ygLHkrP7djPy~0mVxhed4BSKJwOT1lg3GZTeCO2CKB~6kcN5PNsTvPSwYc5E0hBFI0u2bzzlM2aSorAUsgKwjkSfH~PJoHOONqEvWwQeLE~w__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/fe34d3116369405586bc554f1b90ef1f.phpgzfwfd?Expires=4938729333&Signature=h1vKdBfGv36EXvQB1sP2Bq4OEQNu7yYIx02IptvdQNbnyJf~MWM9CV~3V3yFlOvXCi0hDfIUk2vPVDG0vqtixu7ZrgtaXzErBITnvxIZQPZnqn8IdvkGXV39ZGbI-A6AeWApcj9bDPL9l4-MO6HvDQlAj03k6Tm~xoiO7-fC1LxqImLbASDNEU~rvePXhY2QPtpEqduvA~tWEVTJ3iTYavWgDsRzpFQpFRHTOhjpV7SKjUIywnHAYLUcjTwbIYehfXH0JlKODHZeMrMFZIkdUAkcSiN4wiOZi8gLjv1pQAQpvU~n9V81TVxHO6n53YJDstrO8cY3y0yHHXOOQFXqEQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tiempos Headline";
+    src: url("https://file.ontraport.com/media/3fdc22625d3b4f91a262f71fd5245252.phpbg4i9h?Expires=4938729250&Signature=Wvo5HyxM78OtwV1Aw20xmzg-5wImCXP2O53Xc145Vi6pnfp9s-kQ0AWfhrTTzaclT8zRkOMX4s40oW5WzqOP8Dhl1BZch6CSIM0BVXN97093tElhZwKi2wMHLeMMZf4RTPsY~AVlQX91LjkCDbXsBrkCI4MyOgFlaqoLz1qfzW5jfjiSqO-snsWVEpsagiAZD2JGwajiulMP76uSuTXrrI8FWxZBQrAD9-7Mcy-MXF2EHjSSFR3R4xFaWYVZ6PCrvJ3pngv5WuZvI-ry6TZqh0ICgeKn6B0dqYdYx3MZ53YrSwWKqeFy3Tdc30-tz~idjr5bJU13K23F46pyCuODtw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================================================
+   LANDMARK — DESIGN SYSTEM (reusable foundations)
+   Page: Member Portal Login
+   Fonts above are the canonical Ontraport-hosted declarations
+   (copied unchanged). Do not use Typekit/Google/embedded fonts.
+   ========================================================= */
+
+/* ---- Tokens ---- */
+:root {
+  /* Font families */
+  --lm-font-sans: "objektiv-mk1", "Helvetica Neue", Arial, sans-serif;
+  --lm-font-serif: "Tiempos Headline", Georgia, serif;
+
+  /* Brand / page colors */
+  --lm-primary: #0d2d31;       /* Teal        — Block 5 */
+  --lm-primary-deep: #0a2226;  /* Deep Teal   — Block 6 */
+  --lm-green: #217a00;
+  --lm-green-bright: #2ea203;
+  --lm-almond: #efede7;        /* Almond      — Block 4 */
+  --lm-gray: #757171;
+  --lm-muted: #8ba7a4;
+  --lm-coral: #f06449;
+
+  /* Radii */
+  --lm-radius-sm: 5px;
+
+  /* Focus ring */
+  --lm-focus-ring: 0 0 0 3px rgba(46, 162, 3, .25);
+}
+
+/* ---- Base reset (scoped to the page wrapper) ---- */
+.lm-portal-login-wrap,
+.lm-portal-login-wrap *,
+.lm-portal-login-wrap *::before,
+.lm-portal-login-wrap *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lm-portal-login-wrap {
+  font-family: var(--lm-font-sans);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Shared foundations ---- */
+/* Text input foundation */
+.lm-portal-login-wrap input {
+  font-family: inherit;
+  border-radius: var(--lm-radius-sm);
+}
+.lm-portal-login-wrap input:focus {
+  outline: none;
+  box-shadow: var(--lm-focus-ring);
+}
+
+/* Button foundation */
+.lm-portal-login-wrap .lm-btn {
+  border: none;
+  border-radius: var(--lm-radius-sm);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background .15s ease, transform .05s ease;
+}
+.lm-portal-login-wrap .lm-btn:active {
+  transform: translateY(1px);
+}
+
+/* ===== 3. SECTION 1 — LOGIN ===== */
+/* =========================================================
+   SECTION 1 — LOGIN (full-height two-column split)
+   Scoped under .lm-portal-login-wrap. Fonts/tokens/foundations
+   come from design-system.css (and master.css). Body height is
+   not reliable inside Ontraport, so the inner wrapper owns the
+   full-height frame.
+   ========================================================= */
+
+.lm-portal-login-wrap .lm-portal-login__inner {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--lm-primary-deep);
+}
+
+/* ---- Stage (left column) ---- */
+.lm-portal-login-wrap .lm-portal-login__stage {
+  position: relative;
+  flex: 1.35 1 0;
+  min-width: 0;
+  background: url("TBD_ONTRAPORT_ASSET_URL/member-portal-login-stage-background.jpg") center 42% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 44px 52px 56px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 18% 90%, rgba(33, 122, 0, .18), transparent 60%),
+    linear-gradient(180deg,
+      rgba(10, 34, 38, .66) 0%,
+      rgba(10, 34, 38, .58) 7%,
+      rgba(10, 34, 38, .22) 18%,
+      rgba(10, 34, 38, .08) 32%,
+      rgba(10, 34, 38, .10) 60%,
+      rgba(10, 34, 38, .30) 80%,
+      rgba(10, 34, 38, .90) 100%);
+  z-index: 1;
+}
+
+.lm-portal-login-wrap .lm-portal-login__stage > * {
+  position: relative;
+  z-index: 2;
+}
+
+.lm-portal-login-wrap .lm-portal-login__brand-logo {
+  height: 34px;
+  width: auto;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  display: block;
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .35));
+}
+
+.lm-portal-login-wrap .lm-portal-login__stage-copy {
+  max-width: 620px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__eyebrow {
+  font-family: var(--lm-font-serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 29px);
+  color: rgba(255, 255, 255, .92);
+  margin-bottom: 6px;
+  letter-spacing: .01em;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, .35);
+}
+
+.lm-portal-login-wrap .lm-portal-login__title {
+  font-family: var(--lm-font-sans);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.015em;
+  line-height: .9;
+  font-size: clamp(46px, 6.4vw, 96px);
+  color: #fff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, .35);
+}
+
+.lm-portal-login-wrap .lm-portal-login__rule {
+  width: 54px;
+  height: 3px;
+  background: var(--lm-green-bright);
+  margin-top: 22px;
+  border-radius: 2px;
+}
+
+/* ---- Panel (right column) ---- */
+.lm-portal-login-wrap .lm-portal-login__panel {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 340px;
+  max-width: 520px;
+  background: var(--lm-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 56px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(90% 55% at 82% 8%, rgba(33, 122, 0, .16), transparent 60%);
+  pointer-events: none;
+}
+
+.lm-portal-login-wrap .lm-portal-login__form-wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.lm-portal-login-wrap .lm-portal-login__welcome {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -.01em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__dot {
+  color: var(--lm-green-bright);
+}
+
+.lm-portal-login-wrap .lm-portal-login__subhead {
+  color: var(--lm-muted);
+  font-size: 15.5px;
+  line-height: 1.5;
+  margin-bottom: 38px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field {
+  margin-bottom: 20px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--lm-muted);
+  margin-bottom: 9px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: #fff;
+  color: var(--lm-primary);
+  padding: 15px 16px;
+  font-size: 15px;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field input::placeholder {
+  color: #9aa3a2;
+}
+
+.lm-portal-login-wrap .lm-portal-login__field input:focus {
+  border-color: var(--lm-green-bright);
+}
+
+.lm-portal-login-wrap .lm-portal-login__btn {
+  width: 100%;
+  background: var(--lm-green);
+  color: #fff;
+  padding: 16px;
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: .14em;
+}
+
+.lm-portal-login-wrap .lm-portal-login__btn:hover {
+  background: var(--lm-green-bright);
+}
+
+.lm-portal-login-wrap .lm-portal-login__help {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.lm-portal-login-wrap .lm-portal-login__help p {
+  color: var(--lm-muted);
+  font-size: 13.5px;
+  margin-bottom: 10px;
+}
+
+.lm-portal-login-wrap .lm-portal-login__help a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--lm-green-bright);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.lm-portal-login-wrap .lm-portal-login__help a:hover {
+  color: #fff;
+}
+
+.lm-portal-login-wrap .lm-portal-login__help a svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+}
+
+.lm-portal-login-wrap .lm-portal-login__foot {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  padding-top: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, .38);
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+.lm-portal-login-wrap .lm-portal-login__foot span {
+  color: rgba(255, 255, 255, .55);
+}
+
+/* ---- Responsive: stack the split below 900px ---- */
+@media (max-width: 900px) {
+  .lm-portal-login-wrap .lm-portal-login__inner {
+    flex-direction: column;
+  }
+  .lm-portal-login-wrap .lm-portal-login__stage {
+    flex: none;
+    min-height: 44vh;
+    padding: 30px 30px 38px;
+  }
+  .lm-portal-login-wrap .lm-portal-login__title {
+    font-size: clamp(40px, 10vw, 64px);
+  }
+  .lm-portal-login-wrap .lm-portal-login__panel {
+    flex: none;
+    max-width: none;
+    width: 100%;
+    padding: 48px 26px 40px;
+    min-width: 0;
+  }
+  .lm-portal-login-wrap .lm-portal-login__form-wrap {
+    max-width: 420px;
+  }
+  .lm-portal-login-wrap .lm-portal-login__foot {
+    padding-top: 34px;
+  }
+}
+
+@media (max-width: 420px) {
+  .lm-portal-login-wrap .lm-portal-login__stage {
+    padding: 24px 22px 30px;
+  }
+  .lm-portal-login-wrap .lm-portal-login__welcome {
+    font-size: 34px;
+  }
+}
