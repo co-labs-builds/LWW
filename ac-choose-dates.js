@@ -382,10 +382,17 @@
       .then(function (out) {
         log('[LM] ac-choose-dates ->', out);
         if (out && out.ok) {
-          if (CONFIRM_URL) { window.location.href = CONFIRM_URL; return; }
+          // Prefer the URL the webhook hands back - it is THIS registration's own
+          // information-form page, read off the record. The information form lives
+          // on a dynamic template, so its URL only resolves with the record slug in
+          // the PATH (/confirmation/7J1K7PT). A hardcoded /confirmation/ with no
+          // slug lands on Ontraport's "your page isn't turned on yet" screen, which
+          // is exactly what a fixed LM_AC_CONFIRM_URL did on 24 Aug.
+          var next = (out.confirmationUrl || '').trim() || CONFIRM_URL;
+          if (next) { window.location.href = next; return; }
           if (label) { label.textContent = 'Reserved ✓'; }
-          warn('[LM] no CONFIRM_URL set, staying put. Set window.LM_AC_CONFIRM_URL ' +
-               'before the script tag.');
+          warn('[LM] reserved, but no confirmationUrl came back and no ' +
+               'window.LM_AC_CONFIRM_URL is set, so there is nowhere to send you.');
           return;
         }
         if (label) { label.textContent = original; }
