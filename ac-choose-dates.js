@@ -309,12 +309,32 @@
 
   /* ------------------------------------------------------ the submission */
 
+  /* Ontraport's own post-checkout redirect already carries the buyer:
+       uid=7FPM000   contact unique id
+       cid=1379      contact id
+     so no extra query string needs adding to the redirect. ?r= and ?c= are
+     still honoured for links we author ourselves, like the reminder email.
+
+     Deliberately NOT read: _vcid. It decodes to the SESSION contact, which is
+     not always the buyer - one live checkout redirect carried cid=1379 next to
+     _vcid=1373. cid is the form's contact and is the one to trust. */
   function participantRef() {
     var q = new URLSearchParams(window.location.search);
     var ref = {};
-    if (q.get('r')) { ref.r = q.get('r').trim(); }
-    if (q.get('c')) { ref.c = q.get('c').trim(); }
+
+    var r = q.get('r') || q.get('registrationId');
+    var u = q.get('c') || q.get('uid');
+    var n = q.get('cid') || q.get('contactId');
+
+    if (r) { ref.r = r.trim(); }
+    if (u) { ref.c = u.trim(); }
+    if (n && /^[0-9]+$/.test(n.trim())) { ref.contactId = n.trim(); }
+
     return ref;
+  }
+
+  function haveRef(ref) {
+    return !!(ref.r || ref.c || ref.contactId);
   }
 
   function eventIdFrom(panel) {
@@ -336,15 +356,16 @@
     }
 
     var ref = participantRef();
-    if (!ref.r && !ref.c) {
-      warn('[LM] no ?r= or ?c= on the URL, so there is no way to tell who this is. ' +
-           'Refusing rather than guessing.');
+    if (!haveRef(ref)) {
+      warn('[LM] no identifier on the URL - expected one of r, c, uid or cid. ' +
+           'There is no way to tell who this is, so refusing rather than guessing.');
       return;
     }
 
     var payload = { eventId: eventId };
     if (ref.r) { payload.r = ref.r; }
     if (ref.c) { payload.c = ref.c; }
+    if (ref.contactId) { payload.contactId = ref.contactId; }
 
     var label = bodyModal ? bodyModal.querySelector('.opt-button__text-target') : null;
     var original = label ? label.textContent : '';
