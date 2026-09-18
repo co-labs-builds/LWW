@@ -1,0 +1,746 @@
+/* =========================================================
+   LANDMARK FORUM JOURNEY
+   GLOBAL DESIGN FOUNDATION
+
+   All page blocks carry:
+   lm-fj lm-fj-[section]
+   ========================================================= */
+
+
+/* =========================================================
+   ONTRAPORT-HOSTED FONTS
+   ========================================================= */
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/ba7ff633d6c04ce990ea8dcd412628be.phpog5fus?Expires=4938729439&Signature=QwdJNIufBp6Ban7cBFYbg5WnIUYhX3YmhJoGG2Wcp2RvojQM1Y196zA23ANoo~LXamoPi7pi2BVvRyf1JIKGV7LMgdY2icTw~TDwqhZh6SoscuGQla43z-9Bj4q7jzhyJk4gYTEGdhFJQO1VYLVLDPfIFScQA8lZemPBovwTBjxtdAVxroKXujW6YEatuk1FNLPkmNPR1R8DljQbsvccTz9F2k~OgFNI3B6S3ozK3dRAQOsYt7Z25MuYkvt54Li9CMeHBBVZStip8W3q56l4XtsWDqmI2ZtE~xyk9AH6LAQYBE8zqz~WgYjDC1whzMvQFkqBHQ6W3T5lM32CwuoZqg__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/ce5b7e54997044a8b8a5001b7929ff4f.phphgrpey?Expires=4938729384&Signature=Uw6VytthceXwol5adfB8zHZJEh9q6KEUGEm0MXcodLDwRWdRbtsd-6BE69XOYtQRk58794AwDDR2c5BJAqAXH5SVcntlyRWqlYMV~x2kHI1qTPARzWAKTAlPPQn7LUNUYhBr0ZFNAd~bXmEtDvUDJ0RaQwDiR0c49Ix0DZ1CH7mgoiKGigwnmEuISJR~eWQHs2aVUeqXYzeGY6EreetDIT98KSri01gCB0j8Ivo61DwVB5cB~O4qYwaJHr5my99Ss8Gaq40EhbDVDPdHcJrJDeey~QBUu2w~qEaUUfBWIr8EkxCMitSt9t5pRvfuxwuvXUYwFAGlj2yG4cqz7lOxEQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/7a3cb7f1f1a7454ab43f02da2e28d747.phpegn3xv?Expires=4938729429&Signature=Qa~bULdTm8~QxJENdTZ3cGaBCo7EZk2lsq5LmxkH~epvxTipEQpBDPn67qUiZNvfMosHipYE8EKyWggdpewgRJzV~SjVwjoSZJNXXP8pQrBy3dp1riEckf4xordmRo7VxOB7GR-UowWAfPbedbLIRh0ivIy~Szp78P0opYczpnxBGMCT9-UjbeVrDbL2IaKPrsmojUbkzNTQQ3yLqZHOX5O8DXKk3fq1iO~ZozSyQ1DPfbU6FHj0TdNOMWDuU7Qqs2o5SoAajRstgEmP6tpapdXN4Y5y8ANYU7KO9iVGOKpHGQfp3SFXWVa-GbCmeRYHuHsR4zUl5-P1~lCOTnEIqA__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/6f6ea8f2d7ce4916b734fd9e0479ca24.php4lzpsi?Expires=4938729354&Signature=ffiCEtrpgE711FvPkv6q1uqVxJdAJj3mCXgXZfQ~OWdd~na~FC53cZlIBSN9-vQR0hFM57nRD4i7YlTnsc4E04r6sh1Fn5jG~42AY4NNJqLOBwzCQEmQ0wLTNXHu2PxsKmdnNN2Za5ALUPbAHxsPMdY6M83Gtz6b5-u5C-5ywtWY4fTuqK-yf4LDzS3ZxGtFKn0pKWTGBvGPjweBP~B5O~1X00tqaQqqkx9zLSJjOVe8lQWgjge93zv-d2rK-TmoO~pgcghyV24dpKBb8PMB5rOQ2~hUS6uorft~exVaKdUs8m1J6vz31X72pWx~QoOl5bbJiskPLq6R8Ye5PwHPZw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/932c448447d04664b092b2a0a877760e.phpfpkzjo?Expires=4938729403&Signature=Sn1pvhyJZsA3vocVNxdqE48LUTDDSUCRdBPiWq9uMAdzuYluE44g6XQC46e~-8hAAEvTXAPrCcfB3262OqtAANFX7g04shsBazrmqSbshIY5UwNwP9p9UqxVe6ka43c4IUI5fLb0o5uDVaG~Gmddaj-PucZAPlqdEmw-MPEX6NS0EAylfvd2N9IoVC9ZlzbrUtUbOQtaJcR4-wdxSfrJU2leRKORq6W5tHiGOYVvc6ygLHkrP7djPy~0mVxhed4BSKJwOT1lg3GZTeCO2CKB~6kcN5PNsTvPSwYc5E0hBFI0u2bzzlM2aSorAUsgKwjkSfH~PJoHOONqEvWwQeLE~w__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "objektiv-mk1";
+    src: url("https://file.ontraport.com/media/fe34d3116369405586bc554f1b90ef1f.phpgzfwfd?Expires=4938729333&Signature=h1vKdBfGv36EXvQB1sP2Bq4OEQNu7yYIx02IptvdQNbnyJf~MWM9CV~3V3yFlOvXCi0hDfIUk2vPVDG0vqtixu7ZrgtaXzErBITnvxIZQPZnqn8IdvkGXV39ZGbI-A6AeWApcj9bDPL9l4-MO6HvDQlAj03k6Tm~xoiO7-fC1LxqImLbASDNEU~rvePXhY2QPtpEqduvA~tWEVTJ3iTYavWgDsRzpFQpFRHTOhjpV7SKjUIywnHAYLUcjTwbIYehfXH0JlKODHZeMrMFZIkdUAkcSiN4wiOZi8gLjv1pQAQpvU~n9V81TVxHO6n53YJDstrO8cY3y0yHHXOOQFXqEQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tiempos Headline";
+    src: url("https://file.ontraport.com/media/3fdc22625d3b4f91a262f71fd5245252.phpbg4i9h?Expires=4938729250&Signature=Wvo5HyxM78OtwV1Aw20xmzg-5wImCXP2O53Xc145Vi6pnfp9s-kQ0AWfhrTTzaclT8zRkOMX4s40oW5WzqOP8Dhl1BZch6CSIM0BVXN97093tElhZwKi2wMHLeMMZf4RTPsY~AVlQX91LjkCDbXsBrkCI4MyOgFlaqoLz1qfzW5jfjiSqO-snsWVEpsagiAZD2JGwajiulMP76uSuTXrrI8FWxZBQrAD9-7Mcy-MXF2EHjSSFR3R4xFaWYVZ6PCrvJ3pngv5WuZvI-ry6TZqh0ICgeKn6B0dqYdYx3MZ53YrSwWKqeFy3Tdc30-tz~idjr5bJU13K23F46pyCuODtw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Landmark Tiempos';
+    src: url('https://res.cloudinary.com/mynd/raw/upload/v1785533877/tiempos-headline-light-italic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* =========================================================
+   LANDMARK DESIGN TOKENS
+   ========================================================= */
+
+:root {
+    /* Typography */
+    --lm-font-sans:
+        "objektiv-mk1",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+    --lm-font-serif:
+        "Landmark Tiempos",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    /* Brand colors */
+    --lm-white: #ffffff;
+
+    --lm-paper: #f7f5ef;
+    --lm-almond: #efede7;
+
+    --lm-ink: #0e1a19;
+    --lm-gray: #6f6b66;
+    --lm-muted: #8ba7a4;
+    --lm-line: #e6e2d8;
+
+    --lm-teal: #0d2d31;
+    --lm-deep-teal: #0a2226;
+    --lm-tabbar: #41454a;
+
+    --lm-green: #217a00;
+    --lm-green-bright: #2dae0e;
+    --lm-green-soft: #e4f2dd;
+
+    --lm-coral: #f06449;
+    --lm-coral-deep: #d5402a;
+
+    /* Layout */
+    --lm-container: 1180px;
+
+    --lm-gutter-desktop: 40px;
+    --lm-gutter-tablet: 32px;
+    --lm-gutter-mobile: 22px;
+
+    --lm-section-space: 78px;
+    --lm-section-space-tablet: 64px;
+    --lm-section-space-mobile: 48px;
+
+    /* Shape */
+    --lm-radius-button: 5px;
+    --lm-radius-control: 10px;
+    --lm-radius-utility: 12px;
+    --lm-radius-card: 16px;
+    --lm-radius-card-large: 18px;
+    --lm-radius-feature: 20px;
+    --lm-radius-pill: 999px;
+
+    /* Shadows */
+    --lm-shadow-sm:
+        0 4px 18px rgba(14, 26, 25, 0.06);
+
+    --lm-shadow-md:
+        0 14px 44px rgba(14, 26, 25, 0.10);
+
+    --lm-shadow-lg:
+        0 24px 60px rgba(10, 34, 38, 0.18);
+
+    --lm-shadow-button:
+        0 8px 22px rgba(45, 174, 14, 0.24);
+
+    /* Motion */
+    --lm-duration-fast: 150ms;
+    --lm-duration-base: 250ms;
+    --lm-duration-slow: 450ms;
+
+    --lm-ease:
+        cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Sticky navigation */
+    --lm-nav-height: 72px;
+    --lm-nav-height-compact: 56px;
+}
+
+
+/* =========================================================
+   DOCUMENT FOUNDATION
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--lm-nav-height) + 20px);
+}
+
+body {
+    margin: 0;
+
+    color: var(--lm-ink);
+    background: var(--lm-white);
+
+    font-family: var(--lm-font-sans);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* =========================================================
+   FORUM JOURNEY RESET
+   Scoped only to named Forum Journey blocks.
+   ========================================================= */
+
+.lm-fj,
+.lm-fj *,
+.lm-fj *::before,
+.lm-fj *::after {
+    box-sizing: border-box;
+}
+
+.lm-fj,
+.lm-fj * {
+    font-synthesis: none !important;
+}
+
+.lm-fj {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: var(--lm-font-sans);
+    scroll-margin-top: calc(var(--lm-nav-height) + 20px);
+}
+
+
+/* =========================================================
+   ONTRAPORT BLOCK FOUNDATION
+   ========================================================= */
+
+/*
+  Standard spacing applies to normal content sections.
+
+  Navigation, Hero, Contact, and Footer will own their spacing
+  in their individual section styles.
+*/
+.lm-fj:not(.lm-fj-nav):not(.lm-fj-hero):not(.lm-fj-contact):not(.lm-fj-footer)>[opt-id="block-background"] {
+    width: 100% !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    padding-top: var(--lm-section-space) !important;
+    padding-bottom: var(--lm-section-space) !important;
+
+    border: 0 !important;
+}
+
+
+/* Shared page container */
+.lm-fj>[opt-id="block-background"]>.container {
+    width: 100% !important;
+    max-width: var(--lm-container) !important;
+
+    margin-right: auto !important;
+    margin-left: auto !important;
+
+    padding-right: var(--lm-gutter-desktop) !important;
+    padding-left: var(--lm-gutter-desktop) !important;
+}
+
+
+/* Remove Materialize negative row margins */
+.lm-fj>[opt-id="block-background"]>.container>.row {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+/*
+  Remove OP's automatic column gutters.
+
+  Each section will define its own grid gaps and spacing.
+*/
+.lm-fj .row>.col {
+    min-height: 0 !important;
+
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* Keep elements inside their assigned columns */
+.lm-fj .col__style,
+.lm-fj .sub-row,
+.lm-fj .sub-col,
+.lm-fj .el__style,
+.lm-fj .opt-element,
+.lm-fj .opt-custom-html {
+    max-width: 100%;
+}
+
+
+/* Remove OP elevations where global classes are present */
+.lm-fj .z-depth-00,
+.lm-fj .z-depth-10,
+.lm-fj .z-depth-20,
+.lm-fj .z-depth-30,
+.lm-fj .z-depth-40,
+.lm-fj .z-depth-50 {
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   GLOBAL TYPOGRAPHY
+   ========================================================= */
+
+.lm-fj,
+.lm-fj .body-text,
+.lm-fj .label,
+.lm-fj .large-body-text,
+.lm-fj .blockquote,
+.lm-fj .opt-text-wrapper {
+    font-family: var(--lm-font-sans) !important;
+}
+
+
+/* H1 baseline */
+.lm-fj h1,
+.lm-fj .h1 {
+    color: var(--lm-ink);
+
+    font-family: var(--lm-font-sans) !important;
+    font-size: clamp(40px, 4.8vw, 56px);
+    font-weight: 700 !important;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+}
+
+
+/* Every H2 uses 700 */
+.lm-fj h2,
+.lm-fj .h2 {
+    color: var(--lm-ink);
+
+    font-family: var(--lm-font-sans) !important;
+    font-size: clamp(28px, 3.2vw, 40px);
+    font-weight: 700 !important;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+
+/* H3 baseline */
+.lm-fj h3,
+.lm-fj .h3 {
+    color: var(--lm-ink);
+
+    font-family: var(--lm-font-sans) !important;
+    font-size: 20px;
+    font-weight: 700 !important;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+
+/* Body copy */
+.lm-fj .body-text,
+.lm-fj p {
+    font-family: var(--lm-font-sans);
+    font-weight: 400;
+}
+
+
+/* Bold */
+.lm-fj strong,
+.lm-fj b {
+    font-family: var(--lm-font-sans);
+    font-weight: 700;
+}
+
+
+/* Serif editorial accents */
+.lm-fj em,
+.lm-fj .lm-serif,
+.lm-fj .serif-it,
+.lm-fj .fj-serif,
+.lm-fj .fj-serif-in {
+    font-family: var(--lm-font-serif) !important;
+    font-style: italic !important;
+    font-weight: 300 !important;
+    letter-spacing: 0 !important;
+}
+
+
+/* Shared eyebrow class */
+.lm-fj .lm-eyebrow {
+    margin: 0;
+
+    color: var(--lm-green-bright);
+
+    font-family: var(--lm-font-sans) !important;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+.lm-fj img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.lm-fj .img-container {
+    line-height: 0;
+}
+
+
+/* =========================================================
+   BUTTON FOUNDATION
+   Exact visual styling will remain section-specific.
+   ========================================================= */
+
+.lm-fj button,
+.lm-fj input,
+.lm-fj select,
+.lm-fj textarea {
+    font: inherit;
+}
+
+.lm-fj .opt-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 9px !important;
+
+    min-height: 44px;
+
+    border-radius: var(--lm-radius-button) !important;
+
+    font-family: var(--lm-font-sans) !important;
+    text-align: center;
+    text-decoration: none !important;
+
+    cursor: pointer;
+
+    transition:
+        color var(--lm-duration-fast) var(--lm-ease),
+        background var(--lm-duration-fast) var(--lm-ease),
+        border-color var(--lm-duration-fast) var(--lm-ease),
+        box-shadow var(--lm-duration-fast) var(--lm-ease),
+        transform var(--lm-duration-fast) var(--lm-ease) !important;
+}
+
+.lm-fj .opt-button__text-container {
+    padding: 0 !important;
+}
+
+.lm-fj .opt-button__text-target,
+.lm-fj .button {
+    font-family: var(--lm-font-sans) !important;
+    font-weight: 600 !important;
+}
+
+.lm-fj .opt-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   LINKS AND FOCUS
+   ========================================================= */
+
+.lm-fj a {
+    text-underline-offset: 3px;
+}
+
+.lm-fj a:focus-visible,
+.lm-fj button:focus-visible,
+.lm-fj input:focus-visible,
+.lm-fj select:focus-visible,
+.lm-fj textarea:focus-visible,
+.lm-fj summary:focus-visible,
+.lm-fj [tabindex]:focus-visible {
+    outline: 2px solid var(--lm-green-bright) !important;
+    outline-offset: 3px !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE FOUNDATION
+   ========================================================= */
+
+@media (max-width: 1000px) {
+    .lm-fj:not(.lm-fj-nav):not(.lm-fj-hero):not(.lm-fj-contact):not(.lm-fj-footer)>[opt-id="block-background"] {
+        padding-top: var(--lm-section-space-tablet) !important;
+        padding-bottom: var(--lm-section-space-tablet) !important;
+    }
+
+    .lm-fj>[opt-id="block-background"]>.container {
+        padding-right: var(--lm-gutter-tablet) !important;
+        padding-left: var(--lm-gutter-tablet) !important;
+    }
+}
+
+
+@media (max-width: 700px) {
+    html {
+        scroll-padding-top: calc(var(--lm-nav-height-compact) + 16px);
+    }
+
+    .lm-fj {
+        scroll-margin-top: calc(var(--lm-nav-height-compact) + 16px);
+    }
+
+    .lm-fj>[opt-id="block-background"]>.container {
+        padding-right: var(--lm-gutter-mobile) !important;
+        padding-left: var(--lm-gutter-mobile) !important;
+    }
+
+    .lm-fj:not(.lm-fj-nav):not(.lm-fj-hero):not(.lm-fj-contact):not(.lm-fj-footer)>[opt-id="block-background"] {
+        padding-top: var(--lm-section-space-mobile) !important;
+        padding-bottom: var(--lm-section-space-mobile) !important;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .lm-fj,
+    .lm-fj *,
+    .lm-fj *::before,
+    .lm-fj *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =========================================================
+   SECTION 1 — NAVIGATION
+   Block: lm-fj lm-fj-nav
+
+   Elements:
+   lm-fj-nav__logo
+   lm-fj-nav__menu
+   lm-fj-nav__cta
+   ========================================================= */
+
+
+/* =========================================================
+   OUTER BLOCK
+   ========================================================= */
+
+.lm-fj.lm-fj-nav {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+
+    width: 100% !important;
+    min-height: var(--lm-nav-height) !important;
+
+    background: rgba(255, 255, 255, 0.96) !important;
+    border-bottom: 1px solid var(--lm-line) !important;
+    box-shadow: none !important;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    transition:
+        background var(--lm-duration-base) var(--lm-ease),
+        box-shadow var(--lm-duration-base) var(--lm-ease);
+}
+
+
+.lm-fj.lm-fj-nav.is-compact {
+    background: rgba(255, 255, 255, 0.985) !important;
+    box-shadow: 0 5px 20px rgba(14, 26, 25, 0.07) !important;
+}
+
+
+/* =========================================================
+   ONTRAPORT BLOCK WRAPPERS
+   ========================================================= */
+
+.lm-fj-nav>[opt-id="block-background"] {
+    width: 100% !important;
+    min-height: var(--lm-nav-height) !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: 0 !important;
+
+    overflow: visible !important;
+
+    transition:
+        min-height var(--lm-duration-base) var(--lm-ease);
+}
+
+
+.lm-fj-nav>[opt-id="block-background"]>.bg-color-overlay {
+    background: transparent !important;
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+
+.lm-fj-nav>[opt-id="block-background"]>.container {
+    width: 100% !important;
+    max-width: var(--lm-container) !important;
+
+    margin: 0 auto !important;
+    padding: 0 var(--lm-gutter-desktop) !important;
+
+    overflow: visible !important;
+}
+
+
+/*
+  The navigation block should contain exactly three columns:
+
+  1. Logo
+  2. Navigation Menu
+  3. Get Support button
+*/
+.lm-fj-nav>[opt-id="block-background"]>.container>.row {
+    display: grid !important;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center !important;
+    column-gap: 34px;
+
+    width: 100% !important;
+    min-height: var(--lm-nav-height) !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+
+    transition:
+        min-height var(--lm-duration-base) var(--lm-ease);
+}
+
+
+.lm-fj-nav.is-compact>[opt-id="block-background"]>.container>.row {
+    min-height: var(--lm-nav-height-compact) !important;
+}
+
+
+/* =========================================================
+   COLUMN NORMALIZATION
+   ========================================================= */
+
+.lm-fj-nav .row>.col {
+    float: none !important;
+
+    width: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.lm-fj-nav .row>.col:first-child {
+    justify-self: start;
+}
+
+
+.lm-fj-nav .row>.col:nth-child(2) {
+    justify-self: stretch;
+
+    width: 100% !important;
+}
+
+
+.lm-fj-nav .row>.col:last-child {
+    justify-self: end;
+}
+
+
+.lm-fj-nav .col__style,
+.lm-fj-nav .sub-row,
+.lm-fj-nav .sub-col,
+.lm-fj-nav .el__style {
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+.lm-fj-nav .el__style {
+    left: auto !important;
+
+    width: auto !important;
+    max-width: none !important;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.lm-fj-nav .lm-fj-nav__logo {
+    display: block !important;
+
+    width: auto !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+.lm-fj-nav .lm-fj-nav__logo img,
+.lm-fj-nav .lm-fj-nav__logo .img {
+    display: block !important;
+
+    width: auto !important;
+    max-width: none !important;
+    height: 38px !important;
+
+    object-fit: contain;
+
+    transition:
+        height var(--lm-duration-base) var(--lm-ease);
+}
+
+
+.lm-fj-nav.is-compact .lm-fj-nav__logo img,
+.lm-fj-nav.is-compact .lm-fj-nav__logo .img {
+    height: 30px !important;
+}

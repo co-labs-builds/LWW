@@ -1,0 +1,26 @@
+Page Name: Forum Journey
+Slug: forum-journey
+
+What it is: The pre-event page a registered Forum participant lands on between
+registering and Day One. It counts down to the event, tells them the three
+things they need to do this week (add to calendar, run a tech check, complete
+their Information Form), walks them through the weekend's shape, and answers the
+questions people ask before they arrive.
+
+Who it is visible to: Registered Forum participants. The page is personalised
+per registration -- the URL carries a unique id (/journey-XXXXXXX), and Ontraport
+merges that registration's data into the page. No login is required: the URL
+itself is the key, which is why no real journey URL is written down in this
+public repo. Anyone holding one can read that participant's name, email and
+phone straight off the page.
+
+Where it lives: Ontraport Dynamic Page, template "Forum Journey" (page_122 on
+the Registrations object, 10001). A registration's own URL is in its
+"Forum Journey URL" field.
+
+Live example: pull a current URL from the "Forum Journey URL" field on any
+registration record in Ontraport. Do not paste one back into this repo.
+
+Related pages: the same three "things to do" cards appear on the Member Portal
+home page. That build renders the completed state slightly differently -- see
+structure-map, "Known issues".

@@ -1,0 +1,173 @@
+NOTES
+- Page root: every section element carries the class `lm-fj` (the page-root
+  scope) in addition to its own wrapper class. The master.css is scoped under
+  `.lm-fj`, so this class must be present on each Custom HTML element for the
+  styles to apply.
+- master.css and master.js are stored here EXACTLY as they are pasted into
+  Ontraport, including their surrounding `<style>` and `<script>` tags. This
+  differs from member-portal-during, whose master.css has no wrapper tag. They
+  are kept verbatim so the file can be pasted back without editing.
+  master.css -> page Header Code.  master.js -> page Footer Code.
+- design-system.css is not hand-maintained. It is the prefix of master.css --
+  everything before the "SECTION 1 -- NAVIGATION" header, i.e. the canonical
+  Ontraport-hosted fonts, the `:root` tokens and the global typography. It is
+  extracted for reference only; master.css remains the file that ships.
+- Merge fields: Ontraport resolves `[Page//Field]` merges BOTH in text nodes and
+  inside HTML attributes on this page (an href merge resolves correctly -- see
+  the Things To Do card). Some older comments in these files claim attributes
+  are never merged; that is wrong. The hidden `.lm-fj-mf` merge feed is kept as
+  a belt-and-braces channel for values the JS needs to read.
+- The page object is Registrations (Ontraport object 10001), so `[Page//...]`
+  resolves against a registration, and `[Page//Contact//...]` hops to its
+  contact. NB the registration's `unique_id` and the contact's `unique_id` are
+  different values -- the journey URL uses the contact's, the confirmation page
+  URL uses the registration's. Do not hand-build these URLs; merge the stored
+  field instead.
+
+------------------------------------------------------
+
+SECTION LIST (page order)
+
+Background colours are not catalogued for this build -- they sit on inner
+elements rather than the section wrapper. Class names below are taken from the
+section headers in master.css and are accurate.
+
+1. Section Name: Navigation
+Class Name: lm-fj lm-fj-nav
+
+2. Section Name: Hero (countdown + event card)
+Class Name: lm-fj lm-fj-hero
+
+3. Section Name: Things To Do
+Class Name: lm-fj lm-fj-prepare
+HTML Element Class Name: lm-fj-section lm-fj-prepare-wrap
+
+4. Section Name: Journey Timeline
+Class Name: lm-fj lm-fj-journey
+HTML Element Class Name: lm-fj-section lm-fj-journey-wrap
+
+5. Section Name: What Would You Create
+Class Name: lm-fj lm-fj-create
+HTML Element Class Name: lm-fj-section lm-fj-create-wrap
+
+6. Section Name: Getting Ready
+Class Name: lm-fj lm-fj-ready
+HTML Element Class Name: lm-fj-section lm-fj-ready-wrap
+
+7. Section Name: Technology (tech check)
+Class Name: lm-fj lm-fj-tech
+HTML Element Class Name: lm-fj-section lm-fj-tech-wrap
+
+8. Section Name: Member Portal
+Class Name: lm-fj lm-fj-portal
+
+9. Section Name: Your Schedule
+Class Name: lm-fj lm-fj-schedule
+HTML Element Class Name: lm-fj-section lm-fj-schedule-wrap
+
+10. Section Name: Creating The Experience (agreements)
+Class Name: lm-fj lm-fj-agreements
+HTML Element Class Name: lm-fj-section lm-fj-agreements-wrap
+
+11. Section Name: Real Stories
+Class Name: lm-fj lm-fj-stories
+HTML Element Class Name: lm-fj-section lm-fj-stories-wrap
+
+12. Section Name: FAQ
+Class Name: lm-fj lm-fj-faq
+
+13. Section Name: Contact
+Class Name: lm-fj lm-fj-contact
+
+14. Section Name: Footer
+Class Name: lm-fj lm-fj-footer
+
+------------------------------------------------------
+
+WHAT IS IN THIS FOLDER, AND WHAT IS NOT
+
+Present:
+- master.css        the whole page stylesheet, all 14 sections, paste-ready
+- master.js         the whole page script, all sections, paste-ready
+- design-system.css reference extract (see NOTES)
+- sections/3-things-to-do/3-things-to-do.html
+
+Not present: the HTML for sections 1-2 and 4-14. Only the Things To Do block
+was captured. The rest currently live only in the Ontraport page builder and
+have never been exported.
+
+Do NOT backfill them by scraping the live page. The rendered page has every
+merge field already resolved, so a scrape would carry a real participant's name,
+email and phone into this repo -- and both co-labs-builds/LWW and
+co-labs-builds/landmark-new-era are PUBLIC. Export the blocks from the Ontraport
+page builder instead, with the `[Page//...]` merge tags intact.
+
+------------------------------------------------------
+
+SECTION 3 -- INFORMATION FORM TWO-STATE CARD
+
+The third card in Things To Do has two states, driven by the registration's
+"Information Form Completed" checkbox (field f2579 on object 10001).
+
+How it works:
+- The value reaches the page through the hidden merge feed span
+  `<span class="lm-fj-mf" data-mf="infodone">[Page//Information Form Completed]`.
+- It is a checkbox field, and it merges as the WORD "Yes" (not 1/0). The
+  unchecked counterpart is "No" or empty.
+- master.js matches against an allowlist (yes/y/1/true/on/checked/complete/
+  completed). The allowlist is deliberate: an unrecognised value falls through
+  to "incomplete", which shows the call-to-action to someone who may have
+  already filled the form. That is a harmless annoyance. Falling through the
+  other way would hide the CTA from someone who has not filled it, and the
+  details would never arrive.
+- Incomplete copy is the visible text in the HTML. Completed copy lives in the
+  `data-done-*` attributes on the card, so both states are editable in one
+  place. The JS swaps one for the other and caches the authored copy so
+  repeated runs are idempotent.
+- When complete the card stops being a link (`removeAttribute("href")`) and the
+  action label is hidden in CSS. The card otherwise keeps the same teal, coral
+  left border and full-colour photo as its two neighbours.
+- The pill holds an inline SVG checkmark plus a separate label span. The label
+  is what the JS swaps -- setting textContent on the pill itself would delete
+  the icon.
+
+The card's link is `[Page//Registration Confirmation URL]` (field page_112_url),
+merged straight into the href. The JS deliberately contains NO url handling --
+see "Ontraport custom-code sanitizer" below.
+
+------------------------------------------------------
+
+ONTRAPORT CUSTOM-CODE SANITIZER
+
+Ontraport rejects a Footer Code save with "Some of the custom html seems
+suspicious and cannot be saved" if the JS contains certain constructs. An
+earlier version of this page's JS was rejected. The constructs that were present
+in the rejected version and absent from every accepted version:
+
+    sessionStorage / localStorage
+    new URLSearchParams(location.search)
+    setAttribute("href", ...)
+    literal https:// URLs in the script
+
+`removeAttribute("href")` is accepted -- it removes an attribute rather than
+writing a URL. Keep the script free of the four above. The card's link comes
+from the merge field in the HTML, so the script never needs them.
+
+------------------------------------------------------
+
+KNOWN ISSUES
+
+- master.css declares "FORUM JOURNEY -- CONTACT" twice, at two different points
+  in the file. The later block wins. Anyone editing the first one will see no
+  effect. Not yet reconciled.
+- A previously hosted helper script,
+  https://arnold-blip.github.io/lm-scripts/forum-journey-prepare.js, used to run
+  the Things To Do card and has been REMOVED from the HTML block. It is
+  superseded by master.js and actively fought it -- it hid the pill, stripped
+  the card's href, and overwrote the merged link with a stale constant URL. Do
+  not re-add it. The `?v=1` and `?v=2` URLs are the same file; the query string
+  is only a cache-buster.
+- The Member Portal home page renders these same three cards with a different
+  completed treatment (original copy struck through, white pill, action hidden).
+  This build replaces the copy instead and uses a green pill. The two are
+  intentionally different; they are not yet a shared component.
